@@ -1,0 +1,885 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" dir="ltr" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" dir="ltr" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" dir="ltr" lang="en-US"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js lt-ie10" dir="ltr" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" dir="ltr" lang="en-US"> <!--<![endif]-->
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="1.2.5.1",this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this.t.bind(this),this.touchStartHandler=this.i.bind(this),this.touchMoveHandler=this.o.bind(this),this.touchEndHandler=this.h.bind(this),this.clickHandler=this.u.bind(this),this.interceptedClicks=[],this.interceptedClickListeners=[],this.l(this),window.addEventListener("pageshow",(t=>{this.persisted=t.persisted,this.everythingLoaded&&this.m()})),document.addEventListener("DOMContentLoaded",(()=>{this.p()})),this.delayedScripts={normal:[],async:[],defer:[]},this.trash=[],this.allJQueries=[]}k(t){document.hidden?t.t():(this.triggerEvents.forEach((e=>window.addEventListener(e,t.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",t.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",t.touchStartHandler),document.addEventListener("visibilitychange",t.userEventHandler))}_(){this.triggerEvents.forEach((t=>window.removeEventListener(t,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}i(t){"HTML"!==t.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),t.target.addEventListener("click",this.clickHandler),this.L(t.target,!0),this.M(t.target,"onclick","rocket-onclick"),this.C())}o(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.M(t.target,"rocket-onclick","onclick"),this.O()}h(){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}u(t){t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.M(t.target,"rocket-onclick","onclick"),this.interceptedClicks.push(t),t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),this.O()}D(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((t=>{t.target.dispatchEvent(new MouseEvent("click",{view:t.view,bubbles:!0,cancelable:!0}))}))}l(t){EventTarget.prototype.addEventListenerBase=EventTarget.prototype.addEventListener,EventTarget.prototype.addEventListener=function(e,i,o){"click"!==e||t.windowLoaded||i===t.clickHandler||t.interceptedClickListeners.push({target:this,func:i,options:o}),(this||window).addEventListenerBase(e,i,o)}}L(t,e){this.interceptedClickListeners.forEach((i=>{i.target===t&&(e?t.removeEventListener("click",i.func,i.options):t.addEventListener("click",i.func,i.options))})),t.parentNode!==document.documentElement&&this.L(t.parentNode,e)}S(){return new Promise((t=>{this.T?this.O=t:t()}))}C(){this.T=!0}O(){this.T=!1}M(t,e,i){t.hasAttribute&&t.hasAttribute(e)&&(event.target.setAttribute(i,event.target.getAttribute(e)),event.target.removeAttribute(e))}t(){this._(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this.R.bind(this)):this.R()}p(){let t=[];document.querySelectorAll("script[type=rocketlazyloadscript][data-rocket-src]").forEach((e=>{let i=e.getAttribute("data-rocket-src");if(i&&0!==i.indexOf("data:")){0===i.indexOf("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}})),t=[...new Map(t.map((t=>[JSON.stringify(t),t]))).values()],this.j(t,"preconnect")}async R(){this.lastBreath=Date.now(),this.P(this),this.F(this),this.q(),this.A(),this.I(),await this.U(this.delayedScripts.normal),await this.U(this.delayedScripts.defer),await this.U(this.delayedScripts.async);try{await this.W(),await this.H(this),await this.J()}catch(t){console.error(t)}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.S().then((()=>{this.D()})),this.N()}A(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)}))}async B(t){if(await this.G(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise((e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.indexOf("Firefox/")>0||""===navigator.vendor)i=document.createElement("script"),[...t.attributes].forEach((t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))})),t.text&&(i.text=t.text),i.hasAttribute("src")?(i.addEventListener("load",o),i.addEventListener("error",(function(){i.setAttribute("data-rocket-status","failed"),e()})),setTimeout((()=>{i.isConnected||e()}),1)):(i.text=t.text,o()),t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),n=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o),t.addEventListener("error",(function(){t.setAttribute("data-rocket-status","failed"),e()})),n?(t.removeAttribute("data-rocket-src"),t.src=n):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed"),e()}}));t.setAttribute("data-rocket-status","skipped")}async U(t){const e=t.shift();return e&&e.isConnected?(await this.B(e),this.U(t)):Promise.resolve()}I(){this.j([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}j(t,e){var i=document.createDocumentFragment();t.forEach((t=>{const o=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(o){const n=document.createElement("link");n.href=o,n.rel=e,"preconnect"!==e&&(n.as="script"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),i.appendChild(n),this.trash.push(n)}})),document.head.appendChild(i)}P(t){let e={};function i(i,o){return e[o].eventsToRewrite.indexOf(i)>=0&&!t.everythingLoaded?"rocket-"+i:i}function o(t,o){!function(t){e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(o)}function n(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o||function(){},set(n){t.everythingLoaded?o=n:e["rocket"+i]=o=n}})}o(document,"DOMContentLoaded"),o(window,"DOMContentLoaded"),o(window,"load"),o(window,"pageshow"),o(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}F(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map((t=>"load"===t||0===t.indexOf("load.")?"rocket-jquery-load":t)).join(" ")}function o(o){if(o&&o.fn&&!t.allJQueries.includes(o)){o.fn.ready=o.fn.init.prototype.ready=function(e){return t.domReadyFired?e.bind(document)(o):document.addEventListener("rocket-DOMContentLoaded",(()=>e.bind(document)(o))),o([])};const e=o.fn.on;o.fn.on=o.fn.init.prototype.on=function(){return this[0]===window&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e}))),e.apply(this,arguments),this},t.allJQueries.push(o)}e=o}o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}async H(t){const e=document.querySelector("script[data-webpack]");e&&(await async function(){return new Promise((t=>{e.addEventListener("load",t),e.addEventListener("error",t)}))}(),await t.K(),await t.H(t))}async W(){this.domReadyFired=!0,await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.G(),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}async J(){await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),window.dispatchEvent(new Event("rocket-load")),await this.G(),window.rocketonload&&window.rocketonload(),await this.G(),this.allJQueries.forEach((t=>t(window).trigger("rocket-jquery-load"))),await this.G();const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.G(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted}),this.windowLoaded=!0}m(){document.onreadystatechange&&document.onreadystatechange(),window.onload&&window.onload(),window.onpageshow&&window.onpageshow({persisted:this.persisted})}q(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript;i||console.error("WPRocket unable to document.write this: "+e);const o=document.createRange(),n=i.parentElement;let s=t.get(i);void 0===s&&(s=i.nextSibling,t.set(i,s));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),n.insertBefore(c,s)}}async G(){Date.now()-this.lastBreath>45&&(await this.K(),this.lastBreath=Date.now())}async K(){return document.hidden?new Promise((t=>setTimeout(t))):new Promise((t=>requestAnimationFrame(t)))}N(){this.trash.forEach((t=>t.remove()))}static run(){const t=new RocketLazyLoadScripts;t.k(t)}}RocketLazyLoadScripts.run()})();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+<link rel="profile" href="https://gmpg.org/xfn/11" />
+<link rel="pingback" href="https://progamerage.com/xmlrpc.php" />
+<title>Features | Progamerage</title><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro%3Aregular%2C600%2C700%7CSintony%3A700%7CRoboto%3Areguler&#038;display=swap" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro%3Aregular%2C600%2C700%7CSintony%3A700%7CRoboto%3Areguler&#038;display=swap" media="print" onload="this.media='all'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro%3Aregular%2C600%2C700%7CSintony%3A700%7CRoboto%3Areguler&#038;display=swap" /></noscript>
+<link rel="preload" as="font" href="https://progamerage.com/wp-content/themes/jnews/assets/fonts/jegicon/fonts/jegicon.woff" crossorigin>
+<link rel="preload" as="font" href="https://progamerage.com/wp-content/themes/jnews/assets/fonts/font-awesome/fonts/fontawesome-webfont.woff2" crossorigin><style id="rocket-critical-css">ul{box-sizing:border-box}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}@font-face{font-family:jegicon;src:url(https://progamerage.com/wp-content/themes/jnews/assets/fonts/jegicon/fonts/jegicon.eot);src:url(https://progamerage.com/wp-content/themes/jnews/assets/fonts/jegicon/fonts/jegicon.eot?#iefix) format("embedded-opentype"),url(https://progamerage.com/wp-content/themes/jnews/assets/fonts/jegicon/fonts/jegicon.woff) format("woff"),url(https://progamerage.com/wp-content/themes/jnews/assets/fonts/jegicon/fonts/jegicon.ttf) format("truetype"),url(https://progamerage.com/wp-content/themes/jnews/assets/fonts/jegicon/fonts/jegicon.svg#jegicon) format("svg");font-weight:400;font-style:normal;font-display:swap}[class^=jegicon-]:before{font-family:jegicon!important;font-style:normal!important;font-weight:400!important;font-variant:normal!important;text-transform:none!important;speak:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.jegicon-cross:before{content:"\64"}button::-moz-focus-inner{padding:0;border:0}a,article,body,div,form,h1,h3,html,i,iframe,img,ins,li,p,span,ul{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article{display:block}body{line-height:1}ul{list-style:none}body{color:#53585c;background:#fff;font-family:helvetica neue,Helvetica,Roboto,Arial,sans-serif;font-size:14px;line-height:1.6em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-anchor:none}body,html{height:100%;margin:0}::-webkit-selection{background:#fde69a;color:#212121;text-shadow:none}a{color:#f70d28;text-decoration:none}img{vertical-align:middle}img{max-width:100%;-ms-interpolation-mode:bicubic;height:auto}textarea{resize:vertical}button,input,textarea{font:inherit}[class*=jeg_] .fa{font-family:FontAwesome}.container:after,.jeg_postblock:after,.row:after{content:"";display:table;clear:both}h1,h3{color:#212121;text-rendering:optimizeLegibility}h1{font-size:2.25em;margin:.67em 0 .5em;line-height:1.25;letter-spacing:-.02em}h3{font-size:1.563em;margin:1em 0 .5em;line-height:1.4}i{font-style:italic}p{margin:0 0 1.75em;text-rendering:optimizeLegibility}@media (max-width:767px){.container{width:98%;width:calc(100% - 10px)}}@media (max-width:479px){.container{width:100%}}@media (min-width:768px){.container{max-width:750px}}@media (min-width:992px){.container{max-width:970px}}@media (min-width:1200px){.container{max-width:1170px}}.container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}.row{margin-right:-15px;margin-left:-15px}.col-sm-4,.col-sm-8{position:relative;min-height:1px;padding-right:15px;padding-left:15px}@media (min-width:767px){.col-sm-4,.col-sm-8{float:left}.col-sm-8{width:66.66666667%}.col-sm-4{width:33.33333333%}}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.jeg_viewport{position:relative}.jeg_container{width:auto;margin:0 auto;padding:0}.jeg_content{background:#fff}.jeg_content{padding:30px 0 40px}.jeg_sidebar{padding-left:30px}.theiaStickySidebar{-webkit-backface-visibility:hidden}input:not([type=submit]),textarea{display:inline-block;background:#fff;border:1px solid #e0e0e0;border-radius:0;padding:7px 14px;height:40px;outline:0;font-size:14px;font-weight:300;margin:0;width:100%;max-width:100%;box-shadow:none}textarea{min-height:60px;height:auto}.btn,input[type=submit]{border:none;border-radius:0;background:#f70d28;color:#fff;padding:0 20px;line-height:40px;height:40px;display:inline-block;text-transform:uppercase;font-size:13px;font-weight:700;letter-spacing:1px;outline:0;-webkit-appearance:none}.jeg_header{position:relative}.jeg_header .container{height:100%}.jeg_nav_row{position:relative;-js-display:flex;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:row nowrap;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;height:100%}.jeg_nav_grow{-webkit-box-flex:1;-ms-flex:1;flex:1}.jeg_nav_normal{-webkit-box-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto}.item_wrap{width:100%;display:inline-block;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:row wrap;-ms-flex-flow:row wrap;flex-flow:row wrap;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.jeg_nav_left{margin-right:auto}.jeg_nav_right{margin-left:auto}.jeg_nav_center{margin:0 auto}.jeg_nav_alignleft{justify-content:flex-start}.jeg_nav_alignright{justify-content:flex-end}.jeg_nav_aligncenter{justify-content:center}.jeg_navbar{background:#fff;position:relative;border-top:0 solid #e8e8e8;border-bottom:1px solid #e8e8e8;line-height:50px;z-index:9;-webkit-box-sizing:content-box;box-sizing:content-box}.jeg_navbar:first-child{z-index:10}.jeg_navbar .jeg_nav_item{padding:0 14px}.jeg_nav_item:first-child{padding-left:0}.jeg_nav_item:last-child{padding-right:0}.jeg_navbar_dark:not(.jeg_navbar_boxed){background:#212121}.jeg_navbar_dark .jeg_menu>li>a,.jeg_navbar_dark .jeg_search_toggle{color:#fafafa}.jeg_logo{position:relative}.site-title{margin:0;padding:0;line-height:1;font-size:60px;letter-spacing:-.02em}.jeg_mobile_logo .site-title{font-size:34px}.site-title a{display:block;color:#212121}.jeg_navbar.jeg_navbar_dark .site-title a{color:#f5f5f5}.jeg_logo img{height:auto;image-rendering:optimizeQuality;display:block}.jeg_nav_left .jeg_logo{margin-right:7px}.jeg_nav_left .jeg_logo:last-child{margin-right:28px}.btn .fa{margin-right:2px;font-size:14px}.jeg_navbar .btn{height:36px;line-height:36px;font-size:12px;font-weight:500;padding:0 16px}.jeg_search_wrapper{position:relative}.jeg_search_wrapper .jeg_search_form{display:block;position:relative;line-height:normal;min-width:60%}.jeg_search_toggle{color:#212121;display:block;text-align:center}.jeg_navbar .jeg_search_toggle{font-size:16px;min-width:15px}.jeg_search_wrapper .jeg_search_input{width:100%;vertical-align:middle;height:40px;padding:.5em 30px .5em 14px}.jeg_search_wrapper .jeg_search_button{color:#212121;background:0 0;border:0;font-size:14px;outline:0;position:absolute;height:auto;min-height:unset;line-height:normal;top:0;bottom:0;right:0;padding:0 10px}.jeg_navbar .jeg_search_wrapper .jeg_search_input{height:36px}.jeg_search_no_expand .jeg_search_toggle{display:none}.jeg_search_no_expand.round .jeg_search_input{border-radius:33px;padding:.5em 15px}.jeg_search_no_expand.round .jeg_search_button{padding-right:12px}.jeg_navbar_dark .jeg_search_no_expand .jeg_search_input{background:rgba(255,255,255,.1);border-color:transparent}.jeg_navbar_dark .jeg_search_no_expand .jeg_search_button,.jeg_navbar_dark .jeg_search_no_expand .jeg_search_input{color:#fafafa}.jeg_navbar_dark .jeg_search_no_expand .jeg_search_input::-webkit-input-placeholder{color:rgba(255,255,255,.75)}.jeg_navbar_dark .jeg_search_no_expand .jeg_search_input:-moz-placeholder{color:rgba(255,255,255,.75)}.jeg_navbar_dark .jeg_search_no_expand .jeg_search_input::-moz-placeholder{color:rgba(255,255,255,.75)}.jeg_navbar_dark .jeg_search_no_expand .jeg_search_input:-ms-input-placeholder{color:rgba(255,255,255,.75)}.jeg_search_popup_expand .jeg_search_form{display:block;opacity:0;visibility:hidden;position:absolute;top:100%;right:-4px;text-align:center;width:325px;background:#fff;border:1px solid #eee;padding:0;height:0;z-index:12;-webkit-box-shadow:0 1px 4px rgba(0,0,0,.09);box-shadow:0 1px 4px rgba(0,0,0,.09)}.jeg_search_popup_expand .jeg_search_form:before{border-color:transparent transparent #fff;border-style:solid;border-width:0 8px 8px;content:"";right:16px;position:absolute;top:-8px;z-index:98}.jeg_search_popup_expand .jeg_search_form:after{border-color:transparent transparent #eaeaea;border-style:solid;border-width:0 9px 9px;content:"";right:15px;position:absolute;top:-9px;z-index:97}.jeg_search_popup_expand .jeg_search_input{width:100%;-webkit-box-shadow:inset 0 0 15px 0 rgba(0,0,0,.08);box-shadow:inset 0 0 15px 0 rgba(0,0,0,.08)}.jeg_search_popup_expand .jeg_search_button{color:#888;position:absolute;top:0;bottom:0;right:20px}.jeg_navbar:not(.jeg_navbar_boxed):not(.jeg_navbar_menuborder) .jeg_search_popup_expand:last-child .jeg_search_form,.jeg_navbar:not(.jeg_navbar_boxed):not(.jeg_navbar_menuborder) .jeg_search_popup_expand:last-child .jeg_search_result{right:-17px}.jeg_search_hide{display:none}.jeg_search_result{opacity:0;visibility:hidden;position:absolute;top:100%;right:-4px;width:325px;background:#fff;border:1px solid #eee;padding:0;height:0;line-height:1;z-index:9;-webkit-box-shadow:0 1px 4px rgba(0,0,0,.09);box-shadow:0 1px 4px rgba(0,0,0,.09)}.jeg_header .jeg_search_result{z-index:10}.jeg_search_no_expand .jeg_search_result{margin-top:0;opacity:1;visibility:visible;height:auto;min-width:100%;right:0}.jeg_search_result.with_result .search-all-button{overflow:hidden}.jeg_search_result .search-link{display:none;text-align:center;font-size:12px;padding:12px 15px;border-top:1px solid #eee}.jeg_search_result .search-link .fa{margin-right:5px}.jeg_search_result.with_result .search-all-button{display:block}.jeg_menu>li{position:relative;float:left;text-align:left;padding-right:1.2em}.jeg_menu>li:last-child{padding-right:0}.jeg_navbar.jeg_navbar_dark .jeg_menu>li>a{color:#f5f5f5}.jeg_menu a{display:block;position:relative}.jeg_main_menu>li{margin:0;padding:0;list-style:none;float:left}.jeg_main_menu>li>a{color:#212121;display:block;position:relative;padding:0 16px;margin:0;font-size:1em;font-weight:700;line-height:50px;text-transform:uppercase;white-space:nowrap}.jeg_navbar_mobile_wrapper,.jeg_navbar_mobile_wrapper .sticky_blankspace{display:none}.jeg_stickybar{position:fixed;width:100%;top:0;left:auto;width:100%;z-index:9997;margin:0 auto;opacity:0;visibility:hidden}.jeg_stickybar .jeg_logo img{width:auto;max-height:36px}.module-preloader{position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;width:16px;height:16px}.jeg_preloader span{height:16px;width:16px;background-color:#999;-webkit-animation:jeg_preloader_bounce 1.4s infinite ease-in-out both;animation:jeg_preloader_bounce 1.4s infinite ease-in-out both;position:absolute;top:0;border-radius:100%}.jeg_preloader span:first-of-type{left:-22px;-webkit-animation-delay:-.32s;animation-delay:-.32s}.jeg_preloader span:nth-of-type(2){-webkit-animation-delay:-.16s;animation-delay:-.16s}.jeg_preloader span:last-of-type{left:22px}@-webkit-keyframes jeg_preloader_bounce{0%,100%,80%{-webkit-transform:scale(0);opacity:0}40%{-webkit-transform:scale(1);opacity:1}}@keyframes jeg_preloader_bounce{0%,100%,80%{-webkit-transform:scale(0);transform:scale(0);opacity:0}40%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}.jeg_navbar_mobile{display:none;position:relative;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,.1);top:0;transform:translate3d(0,0,0)}.jeg_navbar_mobile .container{width:100%;height:100%}.jeg_mobile_bottombar{border-style:solid}.jeg_mobile_bottombar{height:60px;line-height:60px}.jeg_mobile_bottombar .jeg_nav_item{padding:0 10px}.jeg_navbar_mobile .jeg_nav_left .jeg_nav_item:first-child{padding-left:0}.jeg_navbar_mobile .jeg_nav_right .jeg_nav_item:last-child{padding-right:0}.jeg_mobile_bottombar.dark{background:#000;color:#212121}.jeg_mobile_bottombar.dark a{color:#212121}.jeg_mobile_bottombar.dark .toggle_btn{color:#fff}.jeg_navbar_mobile .toggle_btn{color:#212121;font-size:22px;display:block}.jeg_mobile_logo a{display:block}.jeg_mobile_logo img{width:auto;max-height:40px;display:block}.jeg_mobile_wrapper .jeg_search_no_expand .jeg_search_input{box-shadow:inset 0 2px 2px rgba(0,0,0,.05)}.jeg_mobile_wrapper .jeg_search_result{width:100%;border-left:0;border-right:0;right:0}.jeg_bg_overlay{content:'';display:block;position:fixed;width:100%;top:0;bottom:0;background:#000;background:-webkit-linear-gradient(to bottom,#000,#434343);background:linear-gradient(to bottom,#000,#434343);opacity:0;z-index:9998;visibility:hidden}.jeg_mobile_wrapper{opacity:0;display:block;position:fixed;top:0;left:0;background:#fff;width:320px;height:100%;overflow-x:hidden;overflow-y:auto;z-index:9999;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}.jeg_menu_close{position:fixed;top:15px;right:15px;padding:0;font-size:16px;color:#fff;opacity:0;visibility:hidden;-webkit-transform:rotate(-90deg);transform:rotate(-90deg);z-index:9999}@media only screen and (min-width:1023px){.jeg_menu_close{font-size:20px;padding:20px}}.jeg_mobile_wrapper .nav_wrap{min-height:100%;display:flex;flex-direction:column;position:relative}.jeg_mobile_wrapper .nav_wrap:before{content:"";position:absolute;top:0;left:0;right:0;bottom:0;min-height:100%;z-index:-1}.jeg_mobile_wrapper .item_main{flex:1}.jeg_aside_item{display:block;padding:20px;border-bottom:1px solid #eee}.jeg_aside_item:last-child{border-bottom:0}.jeg_aside_item:after{content:"";display:table;clear:both}.jeg_navbar_mobile_wrapper{position:relative;z-index:9}.jeg_mobile_menu li a{color:#212121;margin-bottom:15px;display:block;font-size:18px;line-height:1.444em;font-weight:700;position:relative}.dark .jeg_bg_overlay{background:#fff}.dark .jeg_mobile_wrapper{background-color:#212121;color:#f5f5f5}.dark .jeg_mobile_wrapper .jeg_search_result{background:rgba(0,0,0,.9);color:#f5f5f5;border:0}.dark .jeg_menu_close{color:#212121}.dark .jeg_mobile_menu li a,.dark .jeg_mobile_wrapper .jeg_search_result .search-link{color:#f5f5f5}.dark .jeg_aside_item,.dark .jeg_search_result.with_result .search-all-button{border-color:rgba(255,255,255,.15)}.dark .jeg_mobile_wrapper .jeg_search_no_expand .jeg_search_input{background:rgba(255,255,255,.1);border:0}.dark .jeg_mobile_wrapper .jeg_search_no_expand .jeg_search_button,.dark .jeg_mobile_wrapper .jeg_search_no_expand .jeg_search_input{color:#fafafa}.dark .jeg_mobile_wrapper .jeg_search_no_expand .jeg_search_input::-webkit-input-placeholder{color:rgba(255,255,255,.75)}.dark .jeg_mobile_wrapper .jeg_search_no_expand .jeg_search_input:-moz-placeholder{color:rgba(255,255,255,.75)}.dark .jeg_mobile_wrapper .jeg_search_no_expand .jeg_search_input::-moz-placeholder{color:rgba(255,255,255,.75)}.dark .jeg_mobile_wrapper .jeg_search_no_expand .jeg_search_input:-ms-input-placeholder{color:rgba(255,255,255,.75)}.module-overlay{width:100%;height:100%;position:absolute;top:0;left:0;background:rgba(255,255,255,.9);display:none;z-index:5}.module-preloader{position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;width:16px;height:16px}.jeg_pl_lg_card{margin-bottom:30px;overflow:visible}.jeg_pl_lg_card .jeg_thumb{position:relative}.jeg_pl_lg_card .jeg_thumb img{width:100%}.jeg_pl_lg_card .jeg_postblock_content{background:#fff;padding:15px 30px 20px;margin:-60px 20px 0;position:relative;z-index:3}.jeg_pl_lg_card .jeg_post_title{font-size:24px;font-weight:700;margin:0 auto 8px}.jeg_pl_lg_card .jeg_post_excerpt{margin:5px 0 10px}.jeg_pl_lg_card .jeg_inner_post{background:#fff}.jeg_pl_lg_card .jeg_post_category{line-height:normal;margin-top:-2px;margin-bottom:8px}.jeg_pl_lg_card .jeg_post_category a{font-size:11px;color:#a0a0a0;font-weight:400;letter-spacing:normal}.jeg_postblock{margin-bottom:20px;position:relative}.jeg_post_title{letter-spacing:-.02em}.jeg_post_title a{color:#212121}.jeg_post_excerpt{font-size:14px;line-height:1.6;margin-top:1em}.jeg_post_excerpt p{margin-bottom:1em}.jeg_post_excerpt p:last-of-type{margin-bottom:0}.jeg_post_meta{font-size:11px;text-transform:uppercase;color:#a0a0a0}.jeg_post_category{margin-bottom:5px;text-rendering:auto;-webkit-font-smoothing:auto;-moz-osx-font-smoothing:auto}.jeg_post_category a{display:inline-block;font-size:12px;text-transform:uppercase;letter-spacing:1px;margin-right:10px}.jeg_post_category a:last-child{margin-right:0}.jeg_post_meta a{color:inherit;font-weight:700}.jeg_meta_date a{font-weight:400}.jeg_post_meta .fa{color:#2e9fff}.jeg_post_meta>div{display:inline-block}.jeg_post_meta>div:not(:last-of-type){margin-right:1em}.jeg_thumb{position:relative;overflow:hidden;z-index:0}.thumbnail-container{display:block;position:relative;height:0;overflow:hidden;z-index:0;background:#f7f7f7;background-position:50%;background-size:cover}.thumbnail-container>img{position:absolute;top:0;bottom:0;left:0;width:100%;min-height:100%;color:#a0a0a0;z-index:-1}.size-500{padding-bottom:50%}.thumbnail-container.animate-lazy>img{opacity:0}.thumbnail-container:after{content:"";opacity:1;background:#f7f7f7 url(https://progamerage.com/wp-content/themes/jnews/assets/img/preloader.gif);background-position:center;background-size:cover;position:absolute;height:100%;top:0;left:0;right:0;bottom:0;z-index:-2}.lazyloaded{opacity:1!important}.jeg_post_category span{display:inline-block;line-height:1}.navigation_overlay{position:relative;height:48px;display:none}.jeg_postblock_12{margin-bottom:0}.jeg_ad{text-align:center}.jeg_ad_module{margin-bottom:40px}.jnews_header_top_ads{position:relative;background:#f5f5f5;z-index:8}.jnews_archive_above_hero_ads>.ads-wrapper>*{padding-bottom:30px}.widget{margin-bottom:40px}.jeg_breadcrumbs{margin-bottom:20px}#breadcrumbs{font-size:12px;margin:0;color:#a0a0a0}#breadcrumbs a{color:#53585c}#breadcrumbs .fa{padding:0 3px}#breadcrumbs .breadcrumb_last_link a{color:#a0a0a0}.jscroll-to-top{position:fixed;right:30px;bottom:30px;-webkit-backface-visibility:hidden;visibility:hidden;opacity:0;-webkit-transform:translate3d(0,30px,0);-ms-transform:translate3d(0,30px,0);transform:translate3d(0,30px,0);z-index:11}.jscroll-to-top>a{color:#a0a0a0;font-size:30px;display:block;width:46px;border-radius:5px;height:46px;line-height:44px;background:rgba(180,180,180,.15);border:1px solid rgba(0,0,0,.11);-webkit-box-shadow:inset 0 0 0 1px rgba(255,255,255,.1),0 2px 6px rgba(0,0,0,.1);box-shadow:inset 0 0 0 1px rgba(255,255,255,.1),0 2px 6px rgba(0,0,0,.1);text-align:center;opacity:.8}@media only screen and (max-width:1024px){.jscroll-to-top{bottom:50px}}.preloader_type .jeg_preloader{display:none}.preloader_type{width:100%;height:100%;position:relative}.preloader_type.preloader_dot .jeg_preloader.dot{display:block}.jnews_preloader_circle_outer{position:absolute;width:100%;top:50%;margin-top:-30px}.jnews_preloader_circle_inner{margin:0 auto;font-size:15px;position:relative;text-indent:-9999em;border-top:.4em solid rgba(0,0,0,.2);border-right:.4em solid rgba(0,0,0,.2);border-bottom:.4em solid rgba(0,0,0,.2);border-left:.4em solid rgba(0,0,0,.6);-webkit-transform:translateZ(0);-ms-transform:translateZ(0);transform:translateZ(0);-webkit-animation:spincircle .9s infinite linear;animation:spincircle .9s infinite linear}.jnews_preloader_circle_inner,.jnews_preloader_circle_inner::after{border-radius:50%;width:60px;height:60px}@-webkit-keyframes spincircle{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes spincircle{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.jeg_square{display:inline-block;width:30px;height:30px;position:relative;border:4px solid #555;top:50%;animation:jeg_square 2s infinite ease}.jeg_square_inner{vertical-align:top;display:inline-block;width:100%;background-color:#555;animation:jeg_square_inner 2s infinite ease-in}@-webkit-keyframes jeg_square{0%{-webkit-transform:rotate(0);transform:rotate(0)}25%{-webkit-transform:rotate(180deg);transform:rotate(180deg)}50%{-webkit-transform:rotate(180deg);transform:rotate(180deg)}75%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes jeg_square{0%{-webkit-transform:rotate(0);transform:rotate(0)}25%{-webkit-transform:rotate(180deg);transform:rotate(180deg)}50%{-webkit-transform:rotate(180deg);transform:rotate(180deg)}75%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@-webkit-keyframes jeg_square_inner{0%{height:0%}25%{height:0%}50%{height:100%}75%{height:100%}100%{height:0%}}@keyframes jeg_square_inner{0%{height:0%}25%{height:0%}50%{height:100%}75%{height:100%}100%{height:0%}}.g-recaptcha{margin-bottom:15px}.jeg_cat_title{font-weight:700;font-size:36px;margin:0;line-height:1.1;letter-spacing:-.04em}.jeg_cat_header_1{margin-bottom:40px;background:0 0}@media only screen and (max-width:1024px){.jeg_header{display:none}.jeg_navbar_mobile,.jeg_navbar_mobile_wrapper{display:block}.jeg_navbar_mobile_wrapper{display:block}.jeg_sidebar{padding:0 15px!important}}@media only screen and (max-width:767px){.jeg_content{padding:20px 0 30px}.jeg_breadcrumbs,.jeg_postblock{margin-bottom:10px}.jeg_cat_header{margin-bottom:25px}.jeg_ad_module,.jeg_sidebar .widget{margin-bottom:30px}.jeg_cat_title{font-size:30px;margin-bottom:10px}#breadcrumbs{font-size:12px}}@media only screen and (max-width:667px){.jeg_cat_title{font-size:26px}}@media only screen and (max-width:480px){.jeg_postblock{margin-bottom:20px}.jeg_cat_title{font-size:20px;line-height:1.3}.jeg_cat_header.jeg_cat_header_1 .jeg_cat_title{font-size:27px}}@media only screen and (max-width:320px){.jeg_mobile_wrapper{width:275px}.jeg_mobile_menu li a{font-size:16px;margin-bottom:12px}}@media only screen and (max-width:1024px){.jeg_pl_lg_card{margin-bottom:30px}.jeg_pl_lg_card .jeg_postblock_content{padding:15px 20px}.jeg_pl_lg_card .jeg_post_title{font-size:18px}}@media only screen and (min-width:768px) and (max-width:1023px){.jeg_post_meta{font-size:10px}.jeg_post_excerpt{font-size:12px}}@media only screen and (max-width:480px){.jeg_post_meta{font-size:10px;text-rendering:auto}.jeg_post_excerpt{margin-top:5px}.jeg_pl_lg_card{margin-bottom:15px}.jeg_pl_lg_card .jeg_postblock_content{margin:-50px 15px 0;padding:12px 15px}.jeg_postblock_12 .jeg_post_title{font-size:16px!important}}@media only screen and (max-width:320px){.jeg_pl_lg_card .jeg_postblock_content{padding:10px 15px}.jeg_pl_lg_card .jeg_post_excerpt{display:none}.jeg_postblock_12 .jeg_post .jeg_post_title{font-size:14px!important}}.jeg_navbar_wrapper .jeg_search_wrapper.jeg_search_no_expand .jeg_search_form .jeg_search_input{border-radius:30px;padding:.5em 35px .5em 15px}.jeg_navbar_wrapper .jeg_search_wrapper.jeg_search_no_expand .jeg_search_form .jeg_search_button{right:5px}.jeg_post_meta{font-size:12px}.jeg_post_meta .fa{color:inherit!important;margin-right:2px}.jeg_post_meta .fa{font-size:13px}</style>
+
+<meta name="robots" content="noindex, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<link rel="canonical" href="https://progamerage.com/category/features/" />
+<link rel="next" href="https://progamerage.com/category/features/page/2/" />
+<meta name="generator" content="All in One SEO (AIOSEO) 4.5.9.2" />
+<script type="application/ld+json" class="aioseo-schema">
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/progamerage.com\/category\/features\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/progamerage.com\/#listItem","position":1,"name":"Home","item":"https:\/\/progamerage.com\/","nextItem":"https:\/\/progamerage.com\/category\/features\/#listItem"},{"@type":"ListItem","@id":"https:\/\/progamerage.com\/category\/features\/#listItem","position":2,"name":"Features","previousItem":"https:\/\/progamerage.com\/#listItem"}]},{"@type":"CollectionPage","@id":"https:\/\/progamerage.com\/category\/features\/#collectionpage","url":"https:\/\/progamerage.com\/category\/features\/","name":"Features | Progamerage","inLanguage":"en-US","isPartOf":{"@id":"https:\/\/progamerage.com\/#website"},"breadcrumb":{"@id":"https:\/\/progamerage.com\/category\/features\/#breadcrumblist"}},{"@type":"Organization","@id":"https:\/\/progamerage.com\/#organization","name":"Progamerage","url":"https:\/\/progamerage.com\/"},{"@type":"WebSite","@id":"https:\/\/progamerage.com\/#website","url":"https:\/\/progamerage.com\/","name":"Progamerage","description":"Latest Game News, Reviews & Updates","inLanguage":"en-US","publisher":{"@id":"https:\/\/progamerage.com\/#organization"}}]}
+		</script>
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Unlock the Full Potential of Your Steam Deck: 6 Ways to Go Beyond Gaming">
+<meta property="og:site_name" content="Progamerage">
+<meta property="og:description" content="The Steam Deck has taken the gaming world by storm with its powerful hardware and extensive library of games. However,">
+<meta property="og:url" content="https://progamerage.com/category/features">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://progamerage.com/wp-content/uploads/2023/06/valve-steam-deck-steamos.jpg">
+<meta property="og:image:height" content="1197">
+<meta property="og:image:width" content="2000">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:url" content="https://progamerage.com/category/features">
+<meta name="twitter:title" content="Unlock the Full Potential of Your Steam Deck: 6 Ways to Go Beyond Gaming">
+<meta name="twitter:description" content="The Steam Deck has taken the gaming world by storm with its powerful hardware and extensive library of games. However,">
+<meta name="twitter:image" content="https://progamerage.com/wp-content/uploads/2023/06/valve-steam-deck-steamos.jpg">
+<meta name="twitter:image:width" content="2000">
+<meta name="twitter:image:height" content="1197">
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+			  var jnews_ajax_url = '/?ajax-request=jnews'
+			</script>
+<script type="text/javascript">;window.jnews=window.jnews||{},window.jnews.library=window.jnews.library||{},window.jnews.library=function(){"use strict";var e=this;e.win=window,e.doc=document,e.noop=function(){},e.globalBody=e.doc.getElementsByTagName("body")[0],e.globalBody=e.globalBody?e.globalBody:e.doc,e.win.jnewsDataStorage=e.win.jnewsDataStorage||{_storage:new WeakMap,put:function(e,t,n){this._storage.has(e)||this._storage.set(e,new Map),this._storage.get(e).set(t,n)},get:function(e,t){return this._storage.get(e).get(t)},has:function(e,t){return this._storage.has(e)&&this._storage.get(e).has(t)},remove:function(e,t){var n=this._storage.get(e).delete(t);return 0===!this._storage.get(e).size&&this._storage.delete(e),n}},e.windowWidth=function(){return e.win.innerWidth||e.docEl.clientWidth||e.globalBody.clientWidth},e.windowHeight=function(){return e.win.innerHeight||e.docEl.clientHeight||e.globalBody.clientHeight},e.requestAnimationFrame=e.win.requestAnimationFrame||e.win.webkitRequestAnimationFrame||e.win.mozRequestAnimationFrame||e.win.msRequestAnimationFrame||window.oRequestAnimationFrame||function(e){return setTimeout(e,1e3/60)},e.cancelAnimationFrame=e.win.cancelAnimationFrame||e.win.webkitCancelAnimationFrame||e.win.webkitCancelRequestAnimationFrame||e.win.mozCancelAnimationFrame||e.win.msCancelRequestAnimationFrame||e.win.oCancelRequestAnimationFrame||function(e){clearTimeout(e)},e.classListSupport="classList"in document.createElement("_"),e.hasClass=e.classListSupport?function(e,t){return e.classList.contains(t)}:function(e,t){return e.className.indexOf(t)>=0},e.addClass=e.classListSupport?function(t,n){e.hasClass(t,n)||t.classList.add(n)}:function(t,n){e.hasClass(t,n)||(t.className+=" "+n)},e.removeClass=e.classListSupport?function(t,n){e.hasClass(t,n)&&t.classList.remove(n)}:function(t,n){e.hasClass(t,n)&&(t.className=t.className.replace(n,""))},e.objKeys=function(e){var t=[];for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&t.push(n);return t},e.isObjectSame=function(e,t){var n=!0;return JSON.stringify(e)!==JSON.stringify(t)&&(n=!1),n},e.extend=function(){for(var e,t,n,o=arguments[0]||{},i=1,a=arguments.length;i<a;i++)if(null!==(e=arguments[i]))for(t in e)o!==(n=e[t])&&void 0!==n&&(o[t]=n);return o},e.dataStorage=e.win.jnewsDataStorage,e.isVisible=function(e){return 0!==e.offsetWidth&&0!==e.offsetHeight||e.getBoundingClientRect().length},e.getHeight=function(e){return e.offsetHeight||e.clientHeight||e.getBoundingClientRect().height},e.getWidth=function(e){return e.offsetWidth||e.clientWidth||e.getBoundingClientRect().width},e.supportsPassive=!1;try{var t=Object.defineProperty({},"passive",{get:function(){e.supportsPassive=!0}});"createEvent"in e.doc?e.win.addEventListener("test",null,t):"fireEvent"in e.doc&&e.win.attachEvent("test",null)}catch(e){}e.passiveOption=!!e.supportsPassive&&{passive:!0},e.setStorage=function(e,t){e="jnews-"+e;var n={expired:Math.floor(((new Date).getTime()+432e5)/1e3)};t=Object.assign(n,t);localStorage.setItem(e,JSON.stringify(t))},e.getStorage=function(e){e="jnews-"+e;var t=localStorage.getItem(e);return null!==t&&0<t.length?JSON.parse(localStorage.getItem(e)):{}},e.expiredStorage=function(){var t,n="jnews-";for(var o in localStorage)o.indexOf(n)>-1&&"undefined"!==(t=e.getStorage(o.replace(n,""))).expired&&t.expired<Math.floor((new Date).getTime()/1e3)&&localStorage.removeItem(o)},e.addEvents=function(t,n,o){for(var i in n){var a=["touchstart","touchmove"].indexOf(i)>=0&&!o&&e.passiveOption;"createEvent"in e.doc?t.addEventListener(i,n[i],a):"fireEvent"in e.doc&&t.attachEvent("on"+i,n[i])}},e.removeEvents=function(t,n){for(var o in n)"createEvent"in e.doc?t.removeEventListener(o,n[o]):"fireEvent"in e.doc&&t.detachEvent("on"+o,n[o])},e.triggerEvents=function(t,n,o){var i;o=o||{detail:null};return"createEvent"in e.doc?(!(i=e.doc.createEvent("CustomEvent")||new CustomEvent(n)).initCustomEvent||i.initCustomEvent(n,!0,!1,o),void t.dispatchEvent(i)):"fireEvent"in e.doc?((i=e.doc.createEventObject()).eventType=n,void t.fireEvent("on"+i.eventType,i)):void 0},e.getParents=function(t,n){void 0===n&&(n=e.doc);for(var o=[],i=t.parentNode,a=!1;!a;)if(i){var r=i;r.querySelectorAll(n).length?a=!0:(o.push(r),i=r.parentNode)}else o=[],a=!0;return o},e.forEach=function(e,t,n){for(var o=0,i=e.length;o<i;o++)t.call(n,e[o],o)},e.getText=function(e){return e.innerText||e.textContent},e.setText=function(e,t){var n="object"==typeof t?t.innerText||t.textContent:t;e.innerText&&(e.innerText=n),e.textContent&&(e.textContent=n)},e.httpBuildQuery=function(t){return e.objKeys(t).reduce(function t(n){var o=arguments.length>1&&void 0!==arguments[1]?arguments[1]:null;return function(i,a){var r=n[a];a=encodeURIComponent(a);var s=o?"".concat(o,"[").concat(a,"]"):a;return null==r||"function"==typeof r?(i.push("".concat(s,"=")),i):["number","boolean","string"].includes(typeof r)?(i.push("".concat(s,"=").concat(encodeURIComponent(r))),i):(i.push(e.objKeys(r).reduce(t(r,s),[]).join("&")),i)}}(t),[]).join("&")},e.get=function(t,n,o,i){return o="function"==typeof o?o:e.noop,e.ajax("GET",t,n,o,i)},e.post=function(t,n,o,i){return o="function"==typeof o?o:e.noop,e.ajax("POST",t,n,o,i)},e.ajax=function(t,n,o,i,a){var r=new XMLHttpRequest,s=n,c=e.httpBuildQuery(o);if(t=-1!=["GET","POST"].indexOf(t)?t:"GET",r.open(t,s+("GET"==t?"?"+c:""),!0),"POST"==t&&r.setRequestHeader("Content-type","application/x-www-form-urlencoded"),r.setRequestHeader("X-Requested-With","XMLHttpRequest"),r.onreadystatechange=function(){4===r.readyState&&200<=r.status&&300>r.status&&"function"==typeof i&&i.call(void 0,r.response)},void 0!==a&&!a){return{xhr:r,send:function(){r.send("POST"==t?c:null)}}}return r.send("POST"==t?c:null),{xhr:r}},e.scrollTo=function(t,n,o){function i(e,t,n){this.start=this.position(),this.change=e-this.start,this.currentTime=0,this.increment=20,this.duration=void 0===n?500:n,this.callback=t,this.finish=!1,this.animateScroll()}return Math.easeInOutQuad=function(e,t,n,o){return(e/=o/2)<1?n/2*e*e+t:-n/2*(--e*(e-2)-1)+t},i.prototype.stop=function(){this.finish=!0},i.prototype.move=function(t){e.doc.documentElement.scrollTop=t,e.globalBody.parentNode.scrollTop=t,e.globalBody.scrollTop=t},i.prototype.position=function(){return e.doc.documentElement.scrollTop||e.globalBody.parentNode.scrollTop||e.globalBody.scrollTop},i.prototype.animateScroll=function(){this.currentTime+=this.increment;var t=Math.easeInOutQuad(this.currentTime,this.start,this.change,this.duration);this.move(t),this.currentTime<this.duration&&!this.finish?e.requestAnimationFrame.call(e.win,this.animateScroll.bind(this)):this.callback&&"function"==typeof this.callback&&this.callback()},new i(t,n,o)},e.unwrap=function(t){var n,o=t;e.forEach(t,(function(e,t){n?n+=e:n=e})),o.replaceWith(n)},e.performance={start:function(e){performance.mark(e+"Start")},stop:function(e){performance.mark(e+"End"),performance.measure(e,e+"Start",e+"End")}},e.fps=function(){var t=0,n=0,o=0;!function(){var i=t=0,a=0,r=0,s=document.getElementById("fpsTable"),c=function(t){void 0===document.getElementsByTagName("body")[0]?e.requestAnimationFrame.call(e.win,(function(){c(t)})):document.getElementsByTagName("body")[0].appendChild(t)};null===s&&((s=document.createElement("div")).style.position="fixed",s.style.top="120px",s.style.left="10px",s.style.width="100px",s.style.height="20px",s.style.border="1px solid black",s.style.fontSize="11px",s.style.zIndex="100000",s.style.backgroundColor="white",s.id="fpsTable",c(s));var l=function(){o++,n=Date.now(),(a=(o/(r=(n-t)/1e3)).toPrecision(2))!=i&&(i=a,s.innerHTML=i+"fps"),1<r&&(t=n,o=0),e.requestAnimationFrame.call(e.win,l)};l()}()},e.instr=function(e,t){for(var n=0;n<t.length;n++)if(-1!==e.toLowerCase().indexOf(t[n].toLowerCase()))return!0},e.winLoad=function(t,n){function o(o){if("complete"===e.doc.readyState||"interactive"===e.doc.readyState)return!o||n?setTimeout(t,n||1):t(o),1}o()||e.addEvents(e.win,{load:o})},e.docReady=function(t,n){function o(o){if("complete"===e.doc.readyState||"interactive"===e.doc.readyState)return!o||n?setTimeout(t,n||1):t(o),1}o()||e.addEvents(e.doc,{DOMContentLoaded:o})},e.fireOnce=function(){e.docReady((function(){e.assets=e.assets||[],e.assets.length&&(e.boot(),e.load_assets())}),50)},e.boot=function(){e.length&&e.doc.querySelectorAll("style[media]").forEach((function(e){"not all"==e.getAttribute("media")&&e.removeAttribute("media")}))},e.create_js=function(t,n){var o=e.doc.createElement("script");switch(o.setAttribute("src",t),n){case"defer":o.setAttribute("defer",!0);break;case"async":o.setAttribute("async",!0);break;case"deferasync":o.setAttribute("defer",!0),o.setAttribute("async",!0)}e.globalBody.appendChild(o)},e.load_assets=function(){"object"==typeof e.assets&&e.forEach(e.assets.slice(0),(function(t,n){var o="";t.defer&&(o+="defer"),t.async&&(o+="async"),e.create_js(t.url,o);var i=e.assets.indexOf(t);i>-1&&e.assets.splice(i,1)})),e.assets=jnewsoption.au_scripts=window.jnewsads=[]},e.setCookie=function(e,t,n){var o="";if(n){var i=new Date;i.setTime(i.getTime()+24*n*60*60*1e3),o="; expires="+i.toUTCString()}document.cookie=e+"="+(t||"")+o+"; path=/"},e.getCookie=function(e){for(var t=e+"=",n=document.cookie.split(";"),o=0;o<n.length;o++){for(var i=n[o];" "==i.charAt(0);)i=i.substring(1,i.length);if(0==i.indexOf(t))return i.substring(t.length,i.length)}return null},e.eraseCookie=function(e){document.cookie=e+"=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;"},e.docReady((function(){e.globalBody=e.globalBody==e.doc?e.doc.getElementsByTagName("body")[0]:e.globalBody,e.globalBody=e.globalBody?e.globalBody:e.doc})),e.winLoad((function(){e.winLoad((function(){var t=!1;if(void 0!==window.jnewsadmin)if(void 0!==window.file_version_checker){var n=e.objKeys(window.file_version_checker);n.length?n.forEach((function(e){t||"10.0.4"===window.file_version_checker[e]||(t=!0)})):t=!0}else t=!0;t&&(window.jnewsHelper.getMessage(),window.jnewsHelper.getNotice())}),2500)}))},window.jnews.library=new window.jnews.library;</script><script type="rocketlazyloadscript" data-rocket-type="module">;/*! instant.page v5.1.1 - (C) 2019-2020 Alexandre Dieulot - https://instant.page/license */
+let t,e;const n=new Set,o=document.createElement("link"),i=o.relList&&o.relList.supports&&o.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype,s="instantAllowQueryString"in document.body.dataset,a="instantAllowExternalLinks"in document.body.dataset,r="instantWhitelist"in document.body.dataset,c="instantMousedownShortcut"in document.body.dataset,d=1111;let l=65,u=!1,f=!1,m=!1;if("instantIntensity"in document.body.dataset){const t=document.body.dataset.instantIntensity;if("mousedown"==t.substr(0,9))u=!0,"mousedown-only"==t&&(f=!0);else if("viewport"==t.substr(0,8))navigator.connection&&(navigator.connection.saveData||navigator.connection.effectiveType&&navigator.connection.effectiveType.includes("2g"))||("viewport"==t?document.documentElement.clientWidth*document.documentElement.clientHeight<45e4&&(m=!0):"viewport-all"==t&&(m=!0));else{const e=parseInt(t);isNaN(e)||(l=e)}}if(i){const n={capture:!0,passive:!0};if(f||document.addEventListener("touchstart",(function(t){e=performance.now();const n=t.target.closest("a");h(n)&&v(n.href)}),n),u?c||document.addEventListener("mousedown",(function(t){const e=t.target.closest("a");h(e)&&v(e.href)}),n):document.addEventListener("mouseover",(function(n){if(performance.now()-e<d)return;if(!("closest"in n.target))return;const o=n.target.closest("a");h(o)&&(o.addEventListener("mouseout",p,{passive:!0}),t=setTimeout((()=>{v(o.href),t=void 0}),l))}),n),c&&document.addEventListener("mousedown",(function(t){if(performance.now()-e<d)return;const n=t.target.closest("a");if(t.which>1||t.metaKey||t.ctrlKey)return;if(!n)return;n.addEventListener("click",(function(t){1337!=t.detail&&t.preventDefault()}),{capture:!0,passive:!1,once:!0});const o=new MouseEvent("click",{view:window,bubbles:!0,cancelable:!1,detail:1337});n.dispatchEvent(o)}),n),m){let t;(t=window.requestIdleCallback?t=>{requestIdleCallback(t,{timeout:1500})}:t=>{t()})((()=>{const t=new IntersectionObserver((e=>{e.forEach((e=>{if(e.isIntersecting){const n=e.target;t.unobserve(n),v(n.href)}}))}));document.querySelectorAll("a").forEach((e=>{h(e)&&t.observe(e)}))}))}}function p(e){e.relatedTarget&&e.target.closest("a")==e.relatedTarget.closest("a")||t&&(clearTimeout(t),t=void 0)}function h(t){if(t&&t.href&&(!r||"instant"in t.dataset)&&(a||t.origin==location.origin||"instant"in t.dataset)&&["http:","https:"].includes(t.protocol)&&("http:"!=t.protocol||"https:"!=location.protocol)&&(s||!t.search||"instant"in t.dataset)&&!(t.hash&&t.pathname+t.search==location.pathname+location.search||"noInstant"in t.dataset))return!0}function v(t){if(n.has(t))return;const e=document.createElement("link");e.rel="prefetch",e.href=t,document.head.appendChild(e),n.add(t)}</script><link rel="dns-prefetch" href="//fonts.googleapis.com" />
+<link rel="dns-prefetch" href="//cdn.pubguru.com" />
+<link rel="dns-prefetch" href="//m2d.m2.ai" />
+<link rel="dns-prefetch" href="//fonts.gstatic.com" />
+<link rel="dns-prefetch" href="//use.fontawesome.com" />
+<link rel="dns-prefetch" href="//www.google.com" />
+<link rel="dns-prefetch" href="//www.googletagmanager.com" />
+<link rel="dns-prefetch" href="//www.googletagservices.com" />
+<link rel="dns-prefetch" href="//adservice.google.com" />
+<link rel="dns-prefetch" href="//pagead2.googlesyndication.com" />
+<link rel="dns-prefetch" href="//tpc.googlesyndication.com" />
+<link rel="dns-prefetch" href="//google-analytics.com" />
+<link rel="dns-prefetch" href="//www.google-analytics.com" />
+<link rel="dns-prefetch" href="//ssl.google-analytics.com" />
+<link rel="dns-prefetch" href="//youtube.com" />
+<link rel="dns-prefetch" href="//ajax.googleapis.com" />
+<link rel="dns-prefetch" href="//apis.google.com" />
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
+<link rel="dns-prefetch" href="//googleads.g.doubleclick.net" />
+<link rel="dns-prefetch" href="//cm.g.doubleclick.net" />
+<link rel="dns-prefetch" href="//d.agkn.com" />
+<link rel="dns-prefetch" href="//pubmatic.com" />
+<link rel="dns-prefetch" href="//ad.doubleclick.net" />
+<link rel="dns-prefetch" href="//stats.g.doubleclick.net" />
+<link rel="dns-prefetch" href="//stats.buysellads.com" />
+<link rel="dns-prefetch" href="//s3.buysellads.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link rel="alternate" type="application/rss+xml" title="Progamerage &raquo; Feed" href="https://progamerage.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Progamerage &raquo; Features Category Feed" href="https://progamerage.com/category/features/feed/" />
+<script id="proga-ready">
+			window.advanced_ads_ready=function(e,a){a=a||"complete";var d=function(e){return"interactive"===a?"loading"!==e:"complete"===e};d(document.readyState)?e():document.addEventListener("readystatechange",(function(a){d(a.target.readyState)&&e()}),{once:"interactive"===a})},window.advanced_ads_ready_queue=window.advanced_ads_ready_queue||[];		</script>
+<style id="wp-emoji-styles-inline-css" type="text/css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel="preload" href="https://progamerage.com/wp-includes/css/dist/block-library/style.min.css?ver=6.5.3" data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')" type="text/css" media="all" />
+<style id="classic-theme-styles-inline-css" type="text/css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="global-styles-inline-css" type="text/css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link data-minify="1" rel="preload" href="https://progamerage.com/wp-content/cache/min/1/wp-content/plugins/ad-overlay-anything/css/style.css?ver=1712574528" data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')" type="text/css" media="all" />
+<style id="aoa-inline-css" type="text/css">
+.aoa_close_btn {
+background: white;
+color: #fc5b70;
+}
+</style>
+<link rel="preload" href="https://progamerage.com/wp-content/plugins/media-credit/public/css/media-credit.min.css?ver=4.3.0" data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')" type="text/css" media="all" />
+<link rel="preload" href="https://progamerage.com/wp-content/themes/jnews/style.css?ver=6.5.3" data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')" type="text/css" media="all" />
+<link rel="preload" href="https://progamerage.com/wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.20.3" data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')" type="text/css" media="all" />
+<link data-minify="1" rel="preload" href="https://progamerage.com/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css?ver=1712574528" data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')" type="text/css" media="all" />
+<link data-minify="1" rel="preload" href="https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/fonts/jegicon/jegicon.css?ver=1712574528" data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')" type="text/css" media="all" />
+<link data-minify="1" rel="preload" href="https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/css/jquery.jscrollpane.css?ver=1712574528" data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')" type="text/css" media="all" />
+<link data-minify="1" rel="preload" href="https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/css/okayNav.css?ver=1712574528" data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')" type="text/css" media="all" />
+<link data-minify="1" rel="preload" href="https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/css/magnific-popup.css?ver=1712574528" data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')" type="text/css" media="all" />
+<link data-minify="1" rel="preload" href="https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/css/chosen/chosen.css?ver=1712574528" data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')" type="text/css" media="all" />
+<link data-minify="1" rel="preload" href="https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/css/main.css?ver=1712574528" data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')" type="text/css" media="all" />
+<link data-minify="1" rel="preload" href="https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/css/pages.css?ver=1712574528" data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')" type="text/css" media="all" />
+<link data-minify="1" rel="preload" href="https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/css/responsive.css?ver=1712574528" data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')" type="text/css" media="all" />
+<link data-minify="1" rel="preload" href="https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/css/pb-temp.css?ver=1712574528" data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')" type="text/css" media="all" />
+<link data-minify="1" rel="preload" href="https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/css/elementor-frontend.css?ver=1712574528" data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')" type="text/css" media="all" />
+<link rel="preload" href="https://progamerage.com/wp-content/themes/jnews-child/style.css?ver=1.0.0" data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')" type="text/css" media="all" />
+<link data-minify="1" rel="preload" href="https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/css/darkmode.css?ver=1712574528" data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')" type="text/css" media="all" />
+<link data-minify="1" rel="preload" href="https://progamerage.com/wp-content/cache/min/1/wp-content/plugins/jnews-review/assets/css/plugin.css?ver=1712574528" data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')" type="text/css" media="all" />
+<style id="rocket-lazyload-inline-css" type="text/css">
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:url(https://progamerage.com/wp-content/plugins/wp-rocket/assets/img/youtube.png) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}.wp-embed-responsive .wp-has-aspect-ratio .rll-youtube-player{position:absolute;padding-bottom:0;width:100%;height:100%;top:0;bottom:0;left:0;right:0}
+</style>
+<link data-minify="1" rel="preload" href="https://progamerage.com/wp-content/cache/min/1/wp-content/plugins/jnews-social-login/assets/css/plugin.css?ver=1712574528" data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')" type="text/css" media="all" />
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://progamerage.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" defer="defer" data-rocket-src="https://progamerage.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="aoa-js-extra">
+/* <![CDATA[ */
+var AoaCloseTimer = ["150"];
+var AoaCloseAfter = ["1000000"];
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" defer="defer" data-rocket-src="https://progamerage.com/wp-content/cache/min/1/wp-content/plugins/ad-overlay-anything/js/aoa-functions.js?ver=1711976900" id="aoa-js"></script>
+<link rel="https://api.w.org/" href="https://progamerage.com/wp-json/" /><link rel="alternate" type="application/json" href="https://progamerage.com/wp-json/wp/v2/categories/244" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://progamerage.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.5.3" />
+<meta name="framework" content="Qedux 4.0.0.1" />
+<meta name="generator" content="Elementor 3.20.3; features: e_optimized_assets_loading, e_optimized_css_loading, e_font_icon_svg, additional_custom_breakpoints, block_editor_assets_optimize, e_image_loading_optimization; settings: css_print_method-external, google_font-enabled, font_display-swap">
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Organization","@id":"https:\/\/progamerage.com\/#organization","url":"https:\/\/progamerage.com\/","name":"","logo":{"@type":"ImageObject","url":""},"sameAs":["http:\/\/facebook.com","https:\/\/www.twitch.tv\/","https:\/\/gaming.youtube.com"]}</script>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"https:\/\/progamerage.com\/#website","url":"https:\/\/progamerage.com\/","name":"","potentialAction":{"@type":"SearchAction","target":"https:\/\/progamerage.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link rel="icon" href="https://progamerage.com/wp-content/uploads/2024/04/cropped-Дизайн-без-названия-3-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://progamerage.com/wp-content/uploads/2024/04/cropped-Дизайн-без-названия-3-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://progamerage.com/wp-content/uploads/2024/04/cropped-Дизайн-без-названия-3-180x180.png" />
+<meta name="msapplication-TileImage" content="https://progamerage.com/wp-content/uploads/2024/04/cropped-Дизайн-без-названия-3-270x270.png" />
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript><script type="rocketlazyloadscript">
+/*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
+(function(w){"use strict";if(!w.loadCSS){w.loadCSS=function(){}}
+var rp=loadCSS.relpreload={};rp.support=(function(){var ret;try{ret=w.document.createElement("link").relList.supports("preload")}catch(e){ret=!1}
+return function(){return ret}})();rp.bindMediaToggle=function(link){var finalMedia=link.media||"all";function enableStylesheet(){link.media=finalMedia}
+if(link.addEventListener){link.addEventListener("load",enableStylesheet)}else if(link.attachEvent){link.attachEvent("onload",enableStylesheet)}
+setTimeout(function(){link.rel="stylesheet";link.media="only x"});setTimeout(enableStylesheet,3000)};rp.poly=function(){if(rp.support()){return}
+var links=w.document.getElementsByTagName("link");for(var i=0;i<links.length;i++){var link=links[i];if(link.rel==="preload"&&link.getAttribute("as")==="style"&&!link.getAttribute("data-loadcss")){link.setAttribute("data-loadcss",!0);rp.bindMediaToggle(link)}}};if(!rp.support()){rp.poly();var run=w.setInterval(rp.poly,500);if(w.addEventListener){w.addEventListener("load",function(){rp.poly();w.clearInterval(run)})}else if(w.attachEvent){w.attachEvent("onload",function(){rp.poly();w.clearInterval(run)})}}
+if(typeof exports!=="undefined"){exports.loadCSS=loadCSS}
+else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this))
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127338098-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-127338098-2');
+</script>
+<script type="text/javascript">
+
+(adsbygoogle = window.adsbygoogle || []).push({
+google_ad_client: "ca-pub-4655949646631122",
+enable_page_level_ads: true
+});
+</script>
+<script type="text/javascript" async src="//c.pubguru.net/pg.progamerage.com.js"></script>
+</head>
+<body class="archive category category-features category-244 wp-embed-responsive jeg_toggle_light jnews jsc_normal elementor-default elementor-kit-6475 aa-prefix-proga-">
+<div class="jeg_ad jeg_ad_top jnews_header_top_ads">
+<div class="ads-wrapper  "></div> </div>
+
+<div class="jeg_viewport">
+<div class="jeg_header_wrapper">
+<div class="jeg_header_instagram_wrapper">
+</div>
+
+<div class="jeg_header normal">
+<div class="jeg_bottombar jeg_navbar jeg_container jeg_navbar_wrapper jeg_navbar_normal jeg_navbar_dark">
+<div class="container">
+<div class="jeg_nav_row">
+<div class="jeg_nav_col jeg_nav_left jeg_nav_grow">
+<div class="item_wrap jeg_nav_alignleft">
+<div class="jeg_nav_item jeg_logo jeg_desktop_logo">
+<div class="site-title">
+<a href="https://progamerage.com/" style="padding: 0 0 0 0;">
+<img class="jeg_logo_img" src="https://progamerage.com/wp-content/uploads/2024/04/Дизайн-без-названия-2.png" alt="Progamerage" data-light-src="https://progamerage.com/wp-content/uploads/2024/04/Дизайн-без-названия-2.png" data-light-srcset="https://progamerage.com/wp-content/uploads/2024/04/Дизайн-без-названия-2.png 1x,  2x" data-dark-src="https://progamerage.com/wp-content/uploads/2021/10/progame2.png" data-dark-srcset="https://progamerage.com/wp-content/uploads/2021/10/progame2.png 1x, https://progamerage.com/wp-content/uploads/2021/10/progame2.png 2x"> </a>
+</div>
+</div>
+<div class="jeg_nav_item jeg_main_menu_wrapper">
+<div class="jeg_mainmenu_wrap"><ul class="jeg_menu jeg_main_menu jeg_menu_style_4" data-animation="animate"><li id="menu-item-6649" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6649 bgnav" data-item-row="default"><a href="play-online.html">Play Online</a></li>
+<li id="menu-item-6650" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6650 bgnav" data-item-row="default"><a href="mobile-games.html">Mobile Games</a></li>
+<li id="menu-item-6651" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6651 bgnav" data-item-row="default"><a href="hardware.html">Hardware</a></li>
+<li id="menu-item-6652" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6652 bgnav" data-item-row="default"><a href="news.html">News</a></li>
+<li id="menu-item-6653" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6653 bgnav" data-item-row="default"><a href="pc-games.html">PC Games</a></li>
+<li id="menu-item-6654" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-6654 bgnav" data-item-row="default"><a href="features.html">Features</a></li>
+</ul></div></div>
+</div>
+</div>
+<div class="jeg_nav_col jeg_nav_center jeg_nav_normal">
+<div class="item_wrap jeg_nav_aligncenter">
+</div>
+</div>
+<div class="jeg_nav_col jeg_nav_right jeg_nav_normal">
+<div class="item_wrap jeg_nav_alignright">
+
+<div class="jeg_nav_item jeg_search_wrapper search_icon jeg_search_popup_expand">
+<a href="#" class="jeg_search_toggle"><i class="fa fa-search"></i></a>
+<form action="https://progamerage.com/" method="get" class="jeg_search_form" target="_top">
+<input name="s" class="jeg_search_input" placeholder="Search..." type="text" value autocomplete="off">
+<button aria-label="Search Button" type="submit" class="jeg_search_button btn"><i class="fa fa-search"></i></button>
+</form>
+
+<div class="jeg_search_result jeg_search_hide with_result">
+<div class="search-result-wrapper">
+</div>
+<div class="search-link search-noresult">
+No Result </div>
+<div class="search-link search-all-button">
+<i class="fa fa-search"></i> View All Result </div>
+</div></div> </div>
+</div>
+</div>
+</div>
+</div></div> </div>
+<div class="jeg_header_sticky">
+<div class="sticky_blankspace"></div>
+<div class="jeg_header full">
+<div class="jeg_container">
+<div data-mode="scroll" class="jeg_stickybar jeg_navbar jeg_navbar_wrapper jeg_navbar_normal jeg_navbar_dark">
+<div class="container">
+<div class="jeg_nav_row">
+<div class="jeg_nav_col jeg_nav_left jeg_nav_grow">
+<div class="item_wrap jeg_nav_alignleft">
+</div>
+</div>
+<div class="jeg_nav_col jeg_nav_center jeg_nav_normal">
+<div class="item_wrap jeg_nav_aligncenter">
+<div class="jeg_nav_item jeg_main_menu_wrapper">
+<div class="jeg_mainmenu_wrap"><ul class="jeg_menu jeg_main_menu jeg_menu_style_4" data-animation="animate"><li id="menu-item-6649" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6649 bgnav" data-item-row="default"><a href="https://progamerage.com/category/play-online/">Play Online</a></li>
+<li id="menu-item-6650" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6650 bgnav" data-item-row="default"><a href="https://progamerage.com/category/mobile-games/">Mobile Games</a></li>
+<li id="menu-item-6651" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6651 bgnav" data-item-row="default"><a href="https://progamerage.com/category/hardware/">Hardware</a></li>
+<li id="menu-item-6652" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6652 bgnav" data-item-row="default"><a href="https://progamerage.com/category/news/">News</a></li>
+<li id="menu-item-6653" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6653 bgnav" data-item-row="default"><a href="https://progamerage.com/category/pc-games/">PC Games</a></li>
+<li id="menu-item-6654" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-6654 bgnav" data-item-row="default"><a href="https://progamerage.com/category/features/">Features</a></li>
+</ul></div></div>
+</div>
+</div>
+<div class="jeg_nav_col jeg_nav_right jeg_nav_grow">
+<div class="item_wrap jeg_nav_alignright">
+
+<div class="jeg_nav_item jeg_nav_search">
+<div class="jeg_search_wrapper jeg_search_no_expand round">
+<a href="#" class="jeg_search_toggle"><i class="fa fa-search"></i></a>
+<form action="https://progamerage.com/" method="get" class="jeg_search_form" target="_top">
+<input name="s" class="jeg_search_input" placeholder="Search..." type="text" value autocomplete="off">
+<button aria-label="Search Button" type="submit" class="jeg_search_button btn"><i class="fa fa-search"></i></button>
+</form>
+
+<div class="jeg_search_result jeg_search_hide with_result">
+<div class="search-result-wrapper">
+</div>
+<div class="search-link search-noresult">
+No Result </div>
+<div class="search-link search-all-button">
+<i class="fa fa-search"></i> View All Result </div>
+</div> </div>
+</div> </div>
+</div>
+</div>
+</div> </div>
+</div>
+</div>
+</div>
+<div class="jeg_navbar_mobile_wrapper">
+<div class="jeg_navbar_mobile" data-mode="scroll">
+<div class="jeg_mobile_bottombar jeg_mobile_midbar jeg_container dark">
+<div class="container">
+<div class="jeg_nav_row">
+<div class="jeg_nav_col jeg_nav_left jeg_nav_normal">
+<div class="item_wrap jeg_nav_alignleft">
+<div class="jeg_nav_item jeg_mobile_logo">
+<div class="site-title">
+<a href="https://progamerage.com/">
+<img class="jeg_logo_img" src="https://progamerage.com/wp-content/uploads/2024/04/Дизайн-без-названия-2.png" alt="Progamerage" data-light-src="https://progamerage.com/wp-content/uploads/2024/04/Дизайн-без-названия-2.png" data-light-srcset="https://progamerage.com/wp-content/uploads/2024/04/Дизайн-без-названия-2.png 1x,  2x" data-dark-src="https://progamerage.com/wp-content/uploads/2021/10/progame2.png" data-dark-srcset="https://progamerage.com/wp-content/uploads/2021/10/progame2.png 1x, https://progamerage.com/wp-content/uploads/2021/10/progame2.png 2x"> </a>
+</div>
+</div> </div>
+</div>
+<div class="jeg_nav_col jeg_nav_center jeg_nav_grow">
+<div class="item_wrap jeg_nav_aligncenter">
+</div>
+</div>
+<div class="jeg_nav_col jeg_nav_right jeg_nav_normal">
+<div class="item_wrap jeg_nav_alignright">
+<div class="jeg_nav_item">
+<a href="#" class="toggle_btn jeg_mobile_toggle"><i class="fa fa-bars"></i></a>
+</div> </div>
+</div>
+</div>
+</div>
+</div></div>
+<div class="sticky_blankspace" style="height: 79px;"></div> </div>
+<div class="jeg_main ">
+<div class="jeg_container">
+<div class="jeg_content">
+<div class="jnews_category_header_top">
+</div>
+<div class="jeg_section">
+<div class="container">
+<div class="jeg_ad jeg_category jnews_archive_above_hero_ads "><div class="ads-wrapper  "><div class="ads_code"><div class="ad_title">Advertisment</div>
+<div><style>
+.adsslotcustom1 { width: 728px; height: 90px; margin:20px auto; }
+@media(max-width: 544px) { .adsslotcustom1 { width: 300px; height: 250px !important; }
+.adsslotcustom1 ins { width: 300px !important; height: 250px !important; }
+}
+@media(min-width: 544px) { .adsslotcustom1 { width: 728px !important; height: 90px !important; }
+.adsslotcustom1 ins { width: 728px !important; height: 90px !important; }
+}
+</style></div>
+<div class="adsslotcustom1">
+<ins class="adsbygoogle" style="display:block; " data-ad-client="ca-pub-4655949646631122" data-ad-slot="2395779267"></ins>
+</div></div></div></div>
+<div class="jnews_category_hero_container">
+</div>
+<div class="jeg_ad jeg_category jnews_archive_below_hero_ads "><div class="ads-wrapper  "></div></div>
+<div class="jeg_cat_content row">
+<div class="jeg_main_content jeg_column col-sm-8">
+<div class="jeg_inner_content">
+<div class="jnews_category_header_bottom">
+<div class="jeg_cat_header jeg_cat_header_1">
+<div class="jeg_breadcrumbs jeg_breadcrumb_category jeg_breadcrumb_container"><div id="breadcrumbs"><span class>
+<a href="https://progamerage.com">Home</a>
+</span><i class="fa fa-angle-right"></i><span class>
+<a href>Category</a>
+</span><i class="fa fa-angle-right"></i><span class="breadcrumb_last_link">
+<a href="https://progamerage.com/category/features/">Features</a>
+</span></div></div>
+<h1 class="jeg_cat_title">Features</h1>
+</div> </div>
+<div class="jnews_category_content_wrapper">
+<div class="jeg_postblock_12 jeg_postblock jeg_module_hook jeg_pagination_nav_3 jeg_col_2o3 jnews_module_6069_0_663cbf80d7646   " data-unique="jnews_module_6069_0_663cbf80d7646">
+<div class="jeg_block_container">
+<div class="jeg_posts jeg_load_more_flag"><article class="jeg_post jeg_pl_lg_card format-standard">
+<div class="jeg_inner_post">
+<div class="jeg_thumb">
+<a href="https://progamerage.com/unlock-the-full-potential-of-your-steam-deck-6-ways-to-go-beyond-gaming/"><div class="thumbnail-container animate-lazy  size-500 "><img fetchpriority="high" width="750" height="375" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="attachment-jnews-750x375 size-jnews-750x375 lazyload wp-post-image" alt="Unlock the Full Potential of Your Steam Deck: 6 Ways to Go Beyond Gaming" decoding="async" sizes="(max-width: 750px) 100vw, 750px" data-src="https://progamerage.com/wp-content/uploads/2023/06/valve-steam-deck-steamos-750x375.jpg" data-srcset="https://progamerage.com/wp-content/uploads/2023/06/valve-steam-deck-steamos-750x375.jpg 750w, https://progamerage.com/wp-content/uploads/2023/06/valve-steam-deck-steamos-360x180.jpg 360w, https://progamerage.com/wp-content/uploads/2023/06/valve-steam-deck-steamos-1140x570.jpg 1140w" data-sizes="auto" data-expand="700" /></div></a>
+</div>
+<div class="jeg_postblock_content">
+<div class="jeg_post_category">
+<span>
+<a href="https://progamerage.com/category/features/">Features</a>
+</span>
+</div>
+<h3 class="jeg_post_title">
+<a href="https://progamerage.com/unlock-the-full-potential-of-your-steam-deck-6-ways-to-go-beyond-gaming/">Unlock the Full Potential of Your Steam Deck: 6 Ways to Go Beyond Gaming</a>
+</h3>
+<div class="jeg_post_meta"><div class="jeg_meta_date"><a href="https://progamerage.com/unlock-the-full-potential-of-your-steam-deck-6-ways-to-go-beyond-gaming/"><i class="fa fa-clock-o"></i> June 22, 2023</a></div><div class="jeg_meta_comment"><a href="https://progamerage.com/unlock-the-full-potential-of-your-steam-deck-6-ways-to-go-beyond-gaming/#comments"><i class="fa fa-comment-o"></i> 0 </a></div></div>
+<div class="jeg_post_excerpt">
+<p>The Steam Deck has taken the gaming world by storm with its powerful hardware and extensive library of games. However, this handheld gaming device is not limited to gaming alone....</p>
+<a href="https://progamerage.com/unlock-the-full-potential-of-your-steam-deck-6-ways-to-go-beyond-gaming/" class="jeg_readmore">Read more</a>
+</div>
+</div>
+</div>
+</article><article class="jeg_post jeg_pl_lg_card format-standard">
+<div class="jeg_inner_post">
+<div class="jeg_thumb">
+<a href="https://progamerage.com/gaming-on-the-go-discover-the-best-portable-gaming-consoles-of-2023/"><div class="thumbnail-container animate-lazy  size-500 "><img width="684" height="375" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="attachment-jnews-750x375 size-jnews-750x375 lazyload wp-post-image" alt="Gaming on the Go: Discover the Best Portable Gaming Consoles of 2023" decoding="async" data-src="https://progamerage.com/wp-content/uploads/2023/06/Screenshot-2023-06-16T122334.745-684x375.png" data-srcset data-sizes="auto" data-expand="700" /></div></a>
+</div>
+<div class="jeg_postblock_content">
+<div class="jeg_post_category">
+<span>
+<a href="https://progamerage.com/category/features/">Features</a>
+</span>
+</div>
+<h3 class="jeg_post_title">
+<a href="https://progamerage.com/gaming-on-the-go-discover-the-best-portable-gaming-consoles-of-2023/">Gaming on the Go: Discover the Best Portable Gaming Consoles of 2023</a>
+</h3>
+<div class="jeg_post_meta"><div class="jeg_meta_date"><a href="https://progamerage.com/gaming-on-the-go-discover-the-best-portable-gaming-consoles-of-2023/"><i class="fa fa-clock-o"></i> June 16, 2023</a></div><div class="jeg_meta_comment"><a href="https://progamerage.com/gaming-on-the-go-discover-the-best-portable-gaming-consoles-of-2023/#comments"><i class="fa fa-comment-o"></i> 0 </a></div></div>
+<div class="jeg_post_excerpt">
+<p>Are you a gaming enthusiast who loves to play on the go? Look no further! In this article, we unveil the top portable gaming consoles of 2023 that will revolutionize...</p>
+<a href="https://progamerage.com/gaming-on-the-go-discover-the-best-portable-gaming-consoles-of-2023/" class="jeg_readmore">Read more</a>
+</div>
+</div>
+</div>
+</article><article class="jeg_post jeg_pl_lg_card format-standard">
+<div class="jeg_inner_post">
+<div class="jeg_thumb">
+<a href="https://progamerage.com/how-to-attach-a-ps4-controller-to-a-computer/"><div class="thumbnail-container animate-lazy  size-500 "><img width="480" height="375" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="attachment-jnews-750x375 size-jnews-750x375 lazyload wp-post-image" alt="How to Attach a PS4 Controller to a Computer" decoding="async" data-src="https://progamerage.com/wp-content/uploads/2023/01/3721268-3889920503-36412-480x375.jpg" data-srcset data-sizes="auto" data-expand="700" /></div></a>
+</div>
+<div class="jeg_postblock_content">
+<div class="jeg_post_category">
+<span>
+<a href="https://progamerage.com/category/features/">Features</a>
+</span>
+</div>
+<h3 class="jeg_post_title">
+<a href="https://progamerage.com/how-to-attach-a-ps4-controller-to-a-computer/">How to Attach a PS4 Controller to a Computer</a>
+</h3>
+<div class="jeg_post_meta"><div class="jeg_meta_date"><a href="https://progamerage.com/how-to-attach-a-ps4-controller-to-a-computer/"><i class="fa fa-clock-o"></i> January 25, 2023</a></div><div class="jeg_meta_comment"><a href="https://progamerage.com/how-to-attach-a-ps4-controller-to-a-computer/#comments"><i class="fa fa-comment-o"></i> 0 </a></div></div>
+<div class="jeg_post_excerpt">
+<p>There are a couple of ways you connect your PS4 controller to a PC, and it's as simple as pie to do so. The PS4 controller is still one of...</p>
+<a href="https://progamerage.com/how-to-attach-a-ps4-controller-to-a-computer/" class="jeg_readmore">Read more</a>
+</div>
+</div>
+</div>
+</article><article class="jeg_post jeg_pl_lg_card format-standard">
+<div class="jeg_inner_post">
+<div class="jeg_thumb">
+<a href="https://progamerage.com/where-to-get-a-netherite-in-minecraft-and-how-to-build-a-netherite-ingot/"><div class="thumbnail-container animate-lazy  size-500 "><img loading="lazy" width="750" height="375" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="attachment-jnews-750x375 size-jnews-750x375 lazyload wp-post-image" alt="Where to Get a Netherite in Minecraft and How to Build a Netherite Ingot?" decoding="async" sizes="(max-width: 750px) 100vw, 750px" data-src="https://progamerage.com/wp-content/uploads/2021/10/feature-image-minecraft-netherite-ingot-guide-750x375.jpg" data-srcset="https://progamerage.com/wp-content/uploads/2021/10/feature-image-minecraft-netherite-ingot-guide-750x375.jpg 750w, https://progamerage.com/wp-content/uploads/2021/10/feature-image-minecraft-netherite-ingot-guide-300x150.jpg 300w, https://progamerage.com/wp-content/uploads/2021/10/feature-image-minecraft-netherite-ingot-guide-1024x512.jpg 1024w, https://progamerage.com/wp-content/uploads/2021/10/feature-image-minecraft-netherite-ingot-guide-768x384.jpg 768w, https://progamerage.com/wp-content/uploads/2021/10/feature-image-minecraft-netherite-ingot-guide-1536x768.jpg 1536w, https://progamerage.com/wp-content/uploads/2021/10/feature-image-minecraft-netherite-ingot-guide-360x180.jpg 360w, https://progamerage.com/wp-content/uploads/2021/10/feature-image-minecraft-netherite-ingot-guide-1140x570.jpg 1140w, https://progamerage.com/wp-content/uploads/2021/10/feature-image-minecraft-netherite-ingot-guide.jpg 1600w" data-sizes="auto" data-expand="700" /></div></a>
+</div>
+<div class="jeg_postblock_content">
+<div class="jeg_post_category">
+<span>
+<a href="https://progamerage.com/category/features/">Features</a>
+</span>
+</div>
+<h3 class="jeg_post_title">
+<a href="https://progamerage.com/where-to-get-a-netherite-in-minecraft-and-how-to-build-a-netherite-ingot/">Where to Get a Netherite in Minecraft and How to Build a Netherite Ingot?</a>
+</h3>
+<div class="jeg_post_meta"><div class="jeg_meta_date"><a href="https://progamerage.com/where-to-get-a-netherite-in-minecraft-and-how-to-build-a-netherite-ingot/"><i class="fa fa-clock-o"></i> October 31, 2022</a></div><div class="jeg_meta_comment"><a href="https://progamerage.com/where-to-get-a-netherite-in-minecraft-and-how-to-build-a-netherite-ingot/#comments"><i class="fa fa-comment-o"></i> 0 </a></div></div>
+<div class="jeg_post_excerpt">
+<p>Knowing where to locate Minecraft Netherite and how to construct a Netherite Ingot is important since the Minecraft Nether update, but that doesn't guarantee that players will automatically know where...</p>
+<a href="https://progamerage.com/where-to-get-a-netherite-in-minecraft-and-how-to-build-a-netherite-ingot/" class="jeg_readmore">Read more</a>
+</div>
+</div>
+</div>
+</article><article class="jeg_post jeg_pl_lg_card format-standard">
+<div class="jeg_inner_post">
+<div class="jeg_thumb">
+<a href="https://progamerage.com/the-top-5-free-nintendo-switch-games-you-can-and-should-play-right-now/"><div class="thumbnail-container animate-lazy  size-500 "><img loading="lazy" width="750" height="375" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="attachment-jnews-750x375 size-jnews-750x375 lazyload wp-post-image" alt="The Top 5 Free Nintendo Switch Games You Can and Should Play Right Now" decoding="async" sizes="(max-width: 750px) 100vw, 750px" data-src="https://progamerage.com/wp-content/uploads/2021/10/nintendo-switch-lite-hands-on-3-750x375.jpg" data-srcset="https://progamerage.com/wp-content/uploads/2021/10/nintendo-switch-lite-hands-on-3-750x375.jpg 750w, https://progamerage.com/wp-content/uploads/2021/10/nintendo-switch-lite-hands-on-3-360x180.jpg 360w, https://progamerage.com/wp-content/uploads/2021/10/nintendo-switch-lite-hands-on-3-1140x570.jpg 1140w" data-sizes="auto" data-expand="700" /></div></a>
+</div>
+<div class="jeg_postblock_content">
+<div class="jeg_post_category">
+<span>
+<a href="https://progamerage.com/category/features/">Features</a>
+</span>
+</div>
+<h3 class="jeg_post_title">
+<a href="https://progamerage.com/the-top-5-free-nintendo-switch-games-you-can-and-should-play-right-now/">The Top 5 Free Nintendo Switch Games You Can and Should Play Right Now</a>
+</h3>
+<div class="jeg_post_meta"><div class="jeg_meta_date"><a href="https://progamerage.com/the-top-5-free-nintendo-switch-games-you-can-and-should-play-right-now/"><i class="fa fa-clock-o"></i> July 6, 2022</a></div><div class="jeg_meta_comment"><a href="https://progamerage.com/the-top-5-free-nintendo-switch-games-you-can-and-should-play-right-now/#comments"><i class="fa fa-comment-o"></i> 0 </a></div></div>
+<div class="jeg_post_excerpt">
+<p>Free Nintendo Switch games are far better than paid Nintendo Switch games. This list covers you if you want to check out some new Switch games without spending any money....</p>
+<a href="https://progamerage.com/the-top-5-free-nintendo-switch-games-you-can-and-should-play-right-now/" class="jeg_readmore">Read more</a>
+</div>
+</div>
+</div>
+</article><article class="jeg_post jeg_pl_lg_card format-standard">
+<div class="jeg_inner_post">
+<div class="jeg_thumb">
+<a href="https://progamerage.com/pokemon-games-ranked-from-worst-to-best/"><div class="thumbnail-container animate-lazy  size-500 "><img loading="lazy" width="750" height="375" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="attachment-jnews-750x375 size-jnews-750x375 lazyload wp-post-image" alt="Pokemon Games Ranked from Worst to Best" decoding="async" sizes="(max-width: 750px) 100vw, 750px" data-src="https://progamerage.com/wp-content/uploads/2021/10/best-pokemon-games.large_-750x375.jpg" data-srcset="https://progamerage.com/wp-content/uploads/2021/10/best-pokemon-games.large_-750x375.jpg 750w, https://progamerage.com/wp-content/uploads/2021/10/best-pokemon-games.large_-360x180.jpg 360w, https://progamerage.com/wp-content/uploads/2021/10/best-pokemon-games.large_-1140x570.jpg 1140w" data-sizes="auto" data-expand="700" /></div></a>
+</div>
+<div class="jeg_postblock_content">
+<div class="jeg_post_category">
+<span>
+<a href="https://progamerage.com/category/features/">Features</a>
+</span>
+</div>
+<h3 class="jeg_post_title">
+<a href="https://progamerage.com/pokemon-games-ranked-from-worst-to-best/">Pokemon Games Ranked from Worst to Best</a>
+</h3>
+<div class="jeg_post_meta"><div class="jeg_meta_date"><a href="https://progamerage.com/pokemon-games-ranked-from-worst-to-best/"><i class="fa fa-clock-o"></i> October 31, 2022</a></div><div class="jeg_meta_comment"><a href="https://progamerage.com/pokemon-games-ranked-from-worst-to-best/#comments"><i class="fa fa-comment-o"></i> 0 </a></div></div>
+<div class="jeg_post_excerpt">
+<p>Ranking the highest Pokemon games is fraught with peril. Is your selection limited to the core series, the eight generations of Pokemon games that have appeared on Nintendo's portable platforms...</p>
+<a href="https://progamerage.com/pokemon-games-ranked-from-worst-to-best/" class="jeg_readmore">Read more</a>
+</div>
+</div>
+</div>
+</article><article class="jeg_post jeg_pl_lg_card format-standard">
+<div class="jeg_inner_post">
+<div class="jeg_thumb">
+<a href="https://progamerage.com/6-games-that-are-similar-to-gta-that-you-should-play-right-now/"><div class="thumbnail-container animate-lazy  size-500 "><img loading="lazy" width="750" height="375" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="attachment-jnews-750x375 size-jnews-750x375 lazyload wp-post-image" alt="6 Games that Are Similar to GTA that You Should Play Right Now" decoding="async" sizes="(max-width: 750px) 100vw, 750px" data-src="https://progamerage.com/wp-content/uploads/2021/10/remastery-gta-3-vice-city-i-san-andreas-poluchili-rejting-v-koree_1633009222723617668-750x375.jpg" data-srcset="https://progamerage.com/wp-content/uploads/2021/10/remastery-gta-3-vice-city-i-san-andreas-poluchili-rejting-v-koree_1633009222723617668-750x375.jpg 750w, https://progamerage.com/wp-content/uploads/2021/10/remastery-gta-3-vice-city-i-san-andreas-poluchili-rejting-v-koree_1633009222723617668-360x180.jpg 360w, https://progamerage.com/wp-content/uploads/2021/10/remastery-gta-3-vice-city-i-san-andreas-poluchili-rejting-v-koree_1633009222723617668-1140x570.jpg 1140w" data-sizes="auto" data-expand="700" /></div></a>
+</div>
+<div class="jeg_postblock_content">
+<div class="jeg_post_category">
+<span>
+<a href="https://progamerage.com/category/features/">Features</a>
+</span>
+</div>
+<h3 class="jeg_post_title">
+<a href="https://progamerage.com/6-games-that-are-similar-to-gta-that-you-should-play-right-now/">6 Games that Are Similar to GTA that You Should Play Right Now</a>
+</h3>
+<div class="jeg_post_meta"><div class="jeg_meta_date"><a href="https://progamerage.com/6-games-that-are-similar-to-gta-that-you-should-play-right-now/"><i class="fa fa-clock-o"></i> October 31, 2022</a></div><div class="jeg_meta_comment"><a href="https://progamerage.com/6-games-that-are-similar-to-gta-that-you-should-play-right-now/#comments"><i class="fa fa-comment-o"></i> 0 </a></div></div>
+<div class="jeg_post_excerpt">
+<p>Suppose you've been having a decent time rampaging over Los Santos and Blaine County but have become bored. In that case, it's understandable that you're trying to find more games...</p>
+<a href="https://progamerage.com/6-games-that-are-similar-to-gta-that-you-should-play-right-now/" class="jeg_readmore">Read more</a>
+</div>
+</div>
+</div>
+</article><article class="jeg_post jeg_pl_lg_card format-standard">
+<div class="jeg_inner_post">
+<div class="jeg_thumb">
+<a href="https://progamerage.com/the-top-zombie-pc-games-in-2022/"><div class="thumbnail-container animate-lazy  size-500 "><img loading="lazy" width="750" height="375" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="attachment-jnews-750x375 size-jnews-750x375 lazyload wp-post-image" alt="The Top Zombie PC Games in 2022" decoding="async" sizes="(max-width: 750px) 100vw, 750px" data-src="https://progamerage.com/wp-content/uploads/2021/10/Best-Zombie-Games-750x375.jpg" data-srcset="https://progamerage.com/wp-content/uploads/2021/10/Best-Zombie-Games-750x375.jpg 750w, https://progamerage.com/wp-content/uploads/2021/10/Best-Zombie-Games-360x180.jpg 360w, https://progamerage.com/wp-content/uploads/2021/10/Best-Zombie-Games-1140x570.jpg 1140w" data-sizes="auto" data-expand="700" /></div></a>
+</div>
+<div class="jeg_postblock_content">
+<div class="jeg_post_category">
+<span>
+<a href="https://progamerage.com/category/features/">Features</a>
+</span>
+</div>
+<h3 class="jeg_post_title">
+<a href="https://progamerage.com/the-top-zombie-pc-games-in-2022/">The Top Zombie PC Games in 2022</a>
+</h3>
+<div class="jeg_post_meta"><div class="jeg_meta_date"><a href="https://progamerage.com/the-top-zombie-pc-games-in-2022/"><i class="fa fa-clock-o"></i> October 31, 2022</a></div><div class="jeg_meta_comment"><a href="https://progamerage.com/the-top-zombie-pc-games-in-2022/#comments"><i class="fa fa-comment-o"></i> 0 </a></div></div>
+<div class="jeg_post_excerpt">
+<p>Zombie games span from survival simulation to co-op period pieces inspired by H.P. Lovecraft, with a shambling detour via tower defense and post-apocalyptic parkour threw certain good measure. This zombie...</p>
+<a href="https://progamerage.com/the-top-zombie-pc-games-in-2022/" class="jeg_readmore">Read more</a>
+</div>
+</div>
+</div>
+</article><article class="jeg_post jeg_pl_lg_card format-standard">
+<div class="jeg_inner_post">
+<div class="jeg_thumb">
+<a href="https://progamerage.com/what-are-the-best-horror-games-to-play-right-now/"><div class="thumbnail-container animate-lazy  size-500 "><img loading="lazy" width="750" height="375" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="attachment-jnews-750x375 size-jnews-750x375 lazyload wp-post-image" alt="What Are the Best Horror Games to Play Right Now?" decoding="async" sizes="(max-width: 750px) 100vw, 750px" data-src="https://progamerage.com/wp-content/uploads/2021/10/best-horror-games-2021-1-e1631049893495-750x375.jpg" data-srcset="https://progamerage.com/wp-content/uploads/2021/10/best-horror-games-2021-1-e1631049893495-750x375.jpg 750w, https://progamerage.com/wp-content/uploads/2021/10/best-horror-games-2021-1-e1631049893495-360x180.jpg 360w, https://progamerage.com/wp-content/uploads/2021/10/best-horror-games-2021-1-e1631049893495-1140x570.jpg 1140w" data-sizes="auto" data-expand="700" /></div></a>
+</div>
+<div class="jeg_postblock_content">
+<div class="jeg_post_category">
+<span>
+<a href="https://progamerage.com/category/features/">Features</a>
+</span>
+</div>
+<h3 class="jeg_post_title">
+<a href="https://progamerage.com/what-are-the-best-horror-games-to-play-right-now/">What Are the Best Horror Games to Play Right Now?</a>
+</h3>
+<div class="jeg_post_meta"><div class="jeg_meta_date"><a href="https://progamerage.com/what-are-the-best-horror-games-to-play-right-now/"><i class="fa fa-clock-o"></i> October 31, 2022</a></div><div class="jeg_meta_comment"><a href="https://progamerage.com/what-are-the-best-horror-games-to-play-right-now/#comments"><i class="fa fa-comment-o"></i> 0 </a></div></div>
+<div class="jeg_post_excerpt">
+<p>The best horror games encompass the entire spectrum of what it means to be scared. From dread to terror, tension to jump scares, this film has it all. There can...</p>
+<a href="https://progamerage.com/what-are-the-best-horror-games-to-play-right-now/" class="jeg_readmore">Read more</a>
+</div>
+</div>
+</div>
+</article><article class="jeg_post jeg_pl_lg_card format-standard">
+<div class="jeg_inner_post">
+<div class="jeg_thumb">
+<a href="https://progamerage.com/the-top-single-player-games-to-play-right-now/"><div class="thumbnail-container animate-lazy  size-500 "><img loading="lazy" width="750" height="375" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="attachment-jnews-750x375 size-jnews-750x375 lazyload wp-post-image" alt="The Top Single-Player Games to Play Right Now" decoding="async" sizes="(max-width: 750px) 100vw, 750px" data-src="https://progamerage.com/wp-content/uploads/2021/10/Sekiro-750x375.jpg" data-srcset="https://progamerage.com/wp-content/uploads/2021/10/Sekiro-750x375.jpg 750w, https://progamerage.com/wp-content/uploads/2021/10/Sekiro-360x180.jpg 360w, https://progamerage.com/wp-content/uploads/2021/10/Sekiro-1140x570.jpg 1140w" data-sizes="auto" data-expand="700" /></div></a>
+</div>
+<div class="jeg_postblock_content">
+<div class="jeg_post_category">
+<span>
+<a href="https://progamerage.com/category/features/">Features</a>
+</span>
+</div>
+<h3 class="jeg_post_title">
+<a href="https://progamerage.com/the-top-single-player-games-to-play-right-now/">The Top Single-Player Games to Play Right Now</a>
+</h3>
+<div class="jeg_post_meta"><div class="jeg_meta_date"><a href="https://progamerage.com/the-top-single-player-games-to-play-right-now/"><i class="fa fa-clock-o"></i> October 31, 2022</a></div><div class="jeg_meta_comment"><a href="https://progamerage.com/the-top-single-player-games-to-play-right-now/#comments"><i class="fa fa-comment-o"></i> 0 </a></div></div>
+<div class="jeg_post_excerpt">
+<p>The best single-player games usually transport us to exotic worlds without the effort of untrustworthy individuals with shaky internet connections. And, with this hardware changing our perception of what's possible...</p>
+<a href="https://progamerage.com/the-top-single-player-games-to-play-right-now/" class="jeg_readmore">Read more</a>
+</div>
+</div>
+</div>
+</article></div>
+<div class="module-overlay">
+<div class="preloader_type preloader_dot">
+<div class="module-preloader jeg_preloader dot">
+<span></span><span></span><span></span>
+</div>
+<div class="module-preloader jeg_preloader circle">
+<div class="jnews_preloader_circle_outer">
+<div class="jnews_preloader_circle_inner"></div>
+</div>
+</div>
+<div class="module-preloader jeg_preloader square">
+<div class="jeg_square">
+<div class="jeg_square_inner"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jeg_block_navigation">
+<div class="navigation_overlay"><div class="module-preloader jeg_preloader"><span></span><span></span><span></span></div></div>
+<div class="jeg_navigation jeg_pagination jeg_pagenav_3 jeg_aligncenter no_navtext no_pageinfo">
+<span class="page_info">Page 1 of 2</span>
+<span class="page_number active">1</span>
+<a class="page_number" href="https://progamerage.com/category/features/page/2/">2</a>
+<a class="page_nav next" href="https://progamerage.com/category/features/page/2/"><span class="navtext">Next</span></a>
+</div>
+</div>
+<script>var jnews_module_6069_0_663cbf80d7646 = {"header_icon":"","first_title":"","second_title":"","url":"","header_type":"heading_6","header_background":"","header_secondary_background":"","header_text_color":"","header_line_color":"","header_accent_color":"","header_filter_category":"","header_filter_author":"","header_filter_tag":"","header_filter_text":"All","post_type":"post","content_type":"all","sponsor":false,"number_post":"10","post_offset":0,"unique_content":"disable","include_post":"","included_only":false,"exclude_post":"","include_category":244,"exclude_category":"","include_author":"","include_tag":"","exclude_tag":"","sort_by":"latest","date_format":"default","date_format_custom":"Y\/m\/d","excerpt_length":"30","excerpt_ellipsis":"...","force_normal_image_load":"","pagination_mode":"nav_3","pagination_nextprev_showtext":"","pagination_number_post":"10","pagination_scroll_limit":0,"ads_type":"disable","ads_position":1,"ads_random":"","ads_image":"","ads_image_tablet":"","ads_image_phone":"","ads_image_link":"","ads_image_alt":"","ads_image_new_tab":"","google_publisher_id":"","google_slot_id":"","google_desktop":"auto","google_tab":"auto","google_phone":"auto","content":"","ads_bottom_text":"","el_id":"","el_class":"","scheme":"","column_width":"auto","title_color":"","accent_color":"","alt_color":"","excerpt_color":"","block_background":"","css":"","paged":1,"pagination_align":"center","pagination_navtext":false,"pagination_pageinfo":false,"boxed":false,"boxed_shadow":false,"box_shadow":false,"push_archive":true,"column_class":"jeg_col_2o3","class":"jnews_block_12"};</script>
+</div> </div>
+</div>
+</div>
+<div class="jeg_sidebar left jeg_sticky_sidebar col-sm-4">
+<div class="jegStickyHolder"><div class="theiaStickySidebar"><div class="widget widget_jnews_popular" id="jnews_popular-4"><div class="jeg_block_heading jeg_block_heading_5 jnews_module_6069_0_663cbf80e10b3">
+<h3 class="jeg_block_title"><span>TOP GAMES</span></h3>
+</div><ul class="popularpost_list"><li class="popularpost_item format-standard">
+<div class="jeg_thumb">
+<a href="https://progamerage.com/these-two-twitch-queens-are-breaking-records/"><div class="thumbnail-container animate-lazy  size-715 "><img loading="lazy" width="350" height="250" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="attachment-jnews-350x250 size-jnews-350x250 lazyload wp-post-image" alt="Alexandra and Andrea Botez" decoding="async" sizes="(max-width: 350px) 100vw, 350px" data-src="https://progamerage.com/wp-content/uploads/2021/09/E21qaKgXEAARYhn-350x250.jpeg" data-srcset="https://progamerage.com/wp-content/uploads/2021/09/E21qaKgXEAARYhn-350x250.jpeg 350w, https://progamerage.com/wp-content/uploads/2021/09/E21qaKgXEAARYhn-120x86.jpeg 120w" data-sizes="auto" data-expand="700" /></div></a>
+</div>
+<h3 class="jeg_post_title">
+<a href="https://progamerage.com/these-two-twitch-queens-are-breaking-records/" data-num="01">These Two Twitch Queens are Breaking Records</a>
+</h3>
+<div class="popularpost_meta">
+<div class="jeg_socialshare">
+<span class="share_count"><i class="fa fa-share-alt"></i> 7 shares</span>
+<div class="socialshare_list">
+<a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fprogamerage.com%2Fthese-two-twitch-queens-are-breaking-records%2F" class="jeg_share_fb"><span class="share-text">Share</span> <span class="share-count">0</span></a>
+<a href="https://twitter.com/intent/tweet?text=These%20Two%20Twitch%20Queens%20are%20Breaking%20Records&url=https%3A%2F%2Fprogamerage.com%2Fthese-two-twitch-queens-are-breaking-records%2F" class="jeg_share_tw"><span class="share-text"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" /></svg>Tweet</span> <span class="share-count">0</span></a>
+</div>
+</div>
+</div>
+</li><li class="popularpost_item format-standard">
+<h3 class="jeg_post_title">
+<a href="https://progamerage.com/love-academy-date-sim/" data-num="02">Love Academy: Date Sim</a>
+</h3>
+<div class="popularpost_meta">
+<div class="jeg_socialshare">
+<span class="share_count"><i class="fa fa-share-alt"></i> 15 shares</span>
+<div class="socialshare_list">
+<a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fprogamerage.com%2Flove-academy-date-sim%2F" class="jeg_share_fb"><span class="share-text">Share</span> <span class="share-count">0</span></a>
+<a href="https://twitter.com/intent/tweet?text=Love%20Academy%3A%20Date%20Sim&url=https%3A%2F%2Fprogamerage.com%2Flove-academy-date-sim%2F" class="jeg_share_tw"><span class="share-text"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" /></svg>Tweet</span> <span class="share-count">0</span></a>
+</div>
+</div>
+</div>
+</li><li class="popularpost_item format-standard">
+<h3 class="jeg_post_title">
+<a href="https://progamerage.com/top-6-mobile-dating-apps-to-get-right-now/" data-num="03">Top 6 Mobile Dating Apps to Get Right Now</a>
+</h3>
+<div class="popularpost_meta">
+<div class="jeg_socialshare">
+<span class="share_count"><i class="fa fa-share-alt"></i> 0 shares</span>
+<div class="socialshare_list">
+<a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fprogamerage.com%2Ftop-6-mobile-dating-apps-to-get-right-now%2F" class="jeg_share_fb"><span class="share-text">Share</span> <span class="share-count">0</span></a>
+<a href="https://twitter.com/intent/tweet?text=Top%206%20Mobile%20Dating%20Apps%20to%20Get%20Right%20Now&url=https%3A%2F%2Fprogamerage.com%2Ftop-6-mobile-dating-apps-to-get-right-now%2F" class="jeg_share_tw"><span class="share-text"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" /></svg>Tweet</span> <span class="share-count">0</span></a>
+</div>
+</div>
+</div>
+</li><li class="popularpost_item format-standard">
+<h3 class="jeg_post_title">
+<a href="https://progamerage.com/top-sports-management-games-to-play-right-now/" data-num="04">Top Sports Management Games To Play Right Now</a>
+</h3>
+<div class="popularpost_meta">
+<div class="jeg_socialshare">
+<span class="share_count"><i class="fa fa-share-alt"></i> 0 shares</span>
+<div class="socialshare_list">
+<a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fprogamerage.com%2Ftop-sports-management-games-to-play-right-now%2F" class="jeg_share_fb"><span class="share-text">Share</span> <span class="share-count">0</span></a>
+<a href="https://twitter.com/intent/tweet?text=Top%20Sports%20Management%20Games%20To%20Play%20Right%20Now&url=https%3A%2F%2Fprogamerage.com%2Ftop-sports-management-games-to-play-right-now%2F" class="jeg_share_tw"><span class="share-text"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" /></svg>Tweet</span> <span class="share-count">0</span></a>
+</div>
+</div>
+</div>
+</li><li class="popularpost_item format-standard">
+<h3 class="jeg_post_title">
+<a href="https://progamerage.com/indiefoxx-explains-why-she-switched-to-onlyfans/" data-num="05">Indiefoxx Explains Why She Switched To OnlyFans</a>
+</h3>
+<div class="popularpost_meta">
+<div class="jeg_socialshare">
+<span class="share_count"><i class="fa fa-share-alt"></i> 0 shares</span>
+<div class="socialshare_list">
+<a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fprogamerage.com%2Findiefoxx-explains-why-she-switched-to-onlyfans%2F" class="jeg_share_fb"><span class="share-text">Share</span> <span class="share-count">0</span></a>
+<a href="https://twitter.com/intent/tweet?text=Indiefoxx%20Explains%20Why%20She%20Switched%20To%20OnlyFans&url=https%3A%2F%2Fprogamerage.com%2Findiefoxx-explains-why-she-switched-to-onlyfans%2F" class="jeg_share_tw"><span class="share-text"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" /></svg>Tweet</span> <span class="share-count">0</span></a>
+</div>
+</div>
+</div>
+</li></ul></div></div></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jeg_ad jnews_above_footer_ads "><div class="ads-wrapper  "></div></div> </div>
+</div>
+<div class="footer-holder" id="footer" data-id="footer">
+<div class="jeg_footer jeg_footer_1 dark">
+<div class="jeg_footer_container jeg_container">
+<div class="jeg_footer_content">
+<div class="container">
+<div class="row">
+<div class="jeg_footer_primary clearfix">
+<div class="col-md-4 footer_column">
+<div class="footer_widget widget_jnews_about" id="jnews_about-2"><div class="jeg_footer_heading jeg_footer_heading_1"><h3 class="jeg_footer_title"><span>About Us</span></h3></div> <div class="jeg_about ">
+<p>We bring you the best Premium WordPress Themes that perfect for news, magazine, personal blog, etc. Check our landing page for details. <br> <br><a href="#" class="readmore">Read more</a></p>
+</div>
+</div> </div>
+<div class="col-md-4 footer_column">
+<div class="footer_widget widget_categories" id="categories-5"><div class="jeg_footer_heading jeg_footer_heading_1"><h3 class="jeg_footer_title"><span>Categories</span></h3></div>
+<ul>
+<li class="cat-item cat-item-244 current-cat"><a aria-current="page" href="https://progamerage.com/category/features/">Features</a>
+</li>
+<li class="cat-item cat-item-64"><a href="https://progamerage.com/category/hardware/">Hardware</a>
+</li>
+<li class="cat-item cat-item-63"><a href="https://progamerage.com/category/mobile-games/">Mobile Games</a>
+</li>
+<li class="cat-item cat-item-261"><a href="https://progamerage.com/category/news/">news</a>
+</li>
+<li class="cat-item cat-item-260"><a href="https://progamerage.com/category/pc-games/">PC Games</a>
+</li>
+<li class="cat-item cat-item-7"><a href="https://progamerage.com/category/play-online/">Play Online</a>
+</li>
+<li class="cat-item cat-item-262"><a href="https://progamerage.com/category/reviews/">Reviews</a>
+</li>
+<li class="cat-item cat-item-253"><a href="https://progamerage.com/category/Special/">Special</a>
+</li>
+<li class="cat-item cat-item-1"><a href="https://progamerage.com/category/uncategorized/">Uncategorized</a>
+</li>
+</ul>
+</div> </div>
+<div class="col-md-4 footer_column">
+</div>
+</div>
+</div>
+<div class="jeg_footer_secondary clearfix">
+
+<div class="footer_right">
+<ul class="jeg_menu_footer"><li id="menu-item-6550" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6550"><a href="https://progamerage.com/contact-us/">Contact Us</a></li>
+<li id="menu-item-6551" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6551"><a href="https://progamerage.com/dmca/">DMCA</a></li>
+<li id="menu-item-6552" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6552"><a href="https://progamerage.com/privacy-policy/">Privacy &#038; Policy</a></li>
+</ul>
+</div>
+
+<p class="copyright"> ©Progamerage. All Rights
+Reserved. </p>
+</div> 
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jscroll-to-top">
+<a href="#back-to-top" class="jscroll-to-top_link"><i class="fa fa-angle-up"></i></a>
+</div>
+</div>
+
+<div id="jeg_off_canvas" class="dark">
+<a href="#" class="jeg_menu_close"><i class="jegicon-cross"></i></a>
+<div class="jeg_bg_overlay"></div>
+<div class="jeg_mobile_wrapper">
+<div class="nav_wrap">
+<div class="item_main">
+
+<div class="jeg_aside_item jeg_search_wrapper jeg_search_no_expand round">
+<a href="#" class="jeg_search_toggle"><i class="fa fa-search"></i></a>
+<form action="https://progamerage.com/" method="get" class="jeg_search_form" target="_top">
+<input name="s" class="jeg_search_input" placeholder="Search..." type="text" value autocomplete="off">
+<button aria-label="Search Button" type="submit" class="jeg_search_button btn"><i class="fa fa-search"></i></button>
+</form>
+
+<div class="jeg_search_result jeg_search_hide with_result">
+<div class="search-result-wrapper">
+</div>
+<div class="search-link search-noresult">
+No Result </div>
+<div class="search-link search-all-button">
+<i class="fa fa-search"></i> View All Result </div>
+</div></div><div class="jeg_aside_item">
+<ul class="jeg_mobile_menu sf-js-hover"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6649"><a href="https://progamerage.com/category/play-online/">Play Online</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6650"><a href="https://progamerage.com/category/mobile-games/">Mobile Games</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6651"><a href="https://progamerage.com/category/hardware/">Hardware</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6652"><a href="https://progamerage.com/category/news/">News</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6653"><a href="https://progamerage.com/category/pc-games/">PC Games</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-6654"><a href="https://progamerage.com/category/features/" aria-current="page">Features</a></li>
+</ul></div> </div>
+<div class="item_bottom">
+</div>
+</div> </div>
+</div><script type="rocketlazyloadscript" data-rocket-type="text/javascript">var jfla = []</script>
+<div id="jeg_off_canvas" class="dark">
+<a href="#" class="jeg_menu_close"><i class="jegicon-cross"></i></a>
+<div class="jeg_bg_overlay"></div>
+<div class="jeg_mobile_wrapper">
+<div class="nav_wrap">
+<div class="item_main">
+
+<div class="jeg_aside_item jeg_search_wrapper jeg_search_no_expand round">
+<a href="#" class="jeg_search_toggle"><i class="fa fa-search"></i></a>
+<form action="https://progamerage.com/" method="get" class="jeg_search_form" target="_top">
+<input name="s" class="jeg_search_input" placeholder="Search..." type="text" value autocomplete="off">
+<button aria-label="Search Button" type="submit" class="jeg_search_button btn"><i class="fa fa-search"></i></button>
+</form>
+
+<div class="jeg_search_result jeg_search_hide with_result">
+<div class="search-result-wrapper">
+</div>
+<div class="search-link search-noresult">
+No Result </div>
+<div class="search-link search-all-button">
+<i class="fa fa-search"></i> View All Result </div>
+</div></div><div class="jeg_aside_item">
+<ul class="jeg_mobile_menu sf-js-hover"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6649"><a href="https://progamerage.com/category/play-online/">Play Online</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6650"><a href="https://progamerage.com/category/mobile-games/">Mobile Games</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6651"><a href="https://progamerage.com/category/hardware/">Hardware</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6652"><a href="https://progamerage.com/category/news/">News</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6653"><a href="https://progamerage.com/category/pc-games/">PC Games</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-6654"><a href="https://progamerage.com/category/features/" aria-current="page">Features</a></li>
+</ul></div> </div>
+<div class="item_bottom">
+</div>
+</div> </div>
+</div><link data-minify="1" rel="preload" href="https://progamerage.com/wp-content/cache/min/1/wp-content/uploads/jnews/scheme.css?ver=1712574528" data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')" type="text/css" media="all" />
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="rocket-browser-checker-js-after">
+/* <![CDATA[ */
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket-preload-links-js-extra">
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index.php\/)?(.*)wp-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/progamerage.com","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="rocket-preload-links-js-after">
+/* <![CDATA[ */
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" defer="defer" data-rocket-src="https://progamerage.com/wp-includes/js/hoverIntent.min.js?ver=1.10.2" id="hoverIntent-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" defer="defer" data-rocket-src="https://progamerage.com/wp-includes/js/imagesloaded.min.js?ver=5.0.0" id="imagesloaded-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" defer="defer" data-rocket-src="https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/js/isotope.js?ver=1711976900" id="isotope-js"></script>
+<script data-minify="1" type="text/javascript" defer="defer" src="https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/js/lazysizes.js?ver=1711976900" id="lazysizes-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" defer="defer" data-rocket-src="https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/js/ls.bgset.js?ver=1711976900" id="bgset-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" defer="defer" data-rocket-src="https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/js/superfish.js?ver=1711976900" id="superfish-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" defer="defer" data-rocket-src="https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/js/theia-sticky-sidebar.js?ver=1711976900" id="theia-sticky-sidebar-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" defer="defer" data-rocket-src="https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/js/jquery.waypoints.js?ver=1711976900" id="waypoint-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" defer="defer" data-rocket-src="https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/js/jquery.scrollTo.js?ver=1711976900" id="scrollto-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" defer="defer" data-rocket-src="https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/js/jquery.parallax.js?ver=1711976900" id="parallax-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" defer="defer" data-rocket-src="https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/js/jquery.okayNav.js?ver=1711976900" id="okaynav-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" defer="defer" data-rocket-src="https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/js/jquery.mousewheel.js?ver=1711976900" id="mousewheel-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" defer="defer" data-rocket-src="https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/js/modernizr-custom.js?ver=1711976900" id="modernizr-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" defer="defer" data-rocket-src="https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/js/jquery.smartresize.js?ver=1711976900" id="smartresize-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" defer="defer" data-rocket-src="https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/js/chosen.jquery.js?ver=1711976900" id="chosen-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" defer="defer" data-rocket-src="https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/js/jquery.magnific-popup.js?ver=1711976900" id="magnific-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" defer="defer" data-rocket-src="https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/js/jquery.jnewsgif.js?ver=1711976900" id="jnews-gif-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" defer="defer" data-rocket-src="https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/js/jquery.jsticky.js?ver=1711976900" id="jnews-sticky-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" defer="defer" data-rocket-src="https://progamerage.com/wp-content/themes/jnews/assets/js/jquery.transit.min.js?ver=1.0.0" id="jquery-transit-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" defer="defer" data-rocket-src="https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/js/jquery.module.js?ver=1711976900" id="jnews-landing-module-js"></script>
+<script type="text/javascript" id="jnews-main-js-extra">
+/* <![CDATA[ */
+var jnewsoption = {"login_reload":"https:\/\/progamerage.com\/category\/features","popup_script":"magnific","single_gallery":"","ismobile":"","isie":"","sidefeed_ajax":"","language":"en_US","module_prefix":"jnews_module_ajax_","live_search":"1","postid":"0","isblog":"","admin_bar":"0","follow_video":"","follow_position":"top_right","rtl":"0","gif":"","lang":{"invalid_recaptcha":"Invalid Recaptcha!","empty_username":"Please enter your username!","empty_email":"Please enter your email!","empty_password":"Please enter your password!"},"recaptcha":"0","site_slug":"\/","site_domain":"progamerage.com","zoom_button":"0"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" defer="defer" data-rocket-src="https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/js/main.js?ver=1711976900" id="jnews-main-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" defer="defer" data-rocket-src="https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/js/darkmode.js?ver=1711976900" id="jnews-darkmode-js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" defer='defer' src="https://progamerage.com/wp-content/themes/jnews/assets/js/html5shiv.min.js?ver=1.0.0" id="html5shiv-js"></script>
+<![endif]-->
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" defer="defer" data-rocket-src="https://progamerage.com/wp-content/cache/min/1/wp-content/plugins/jnews-like/assets/js/plugin.js?ver=1711980832" id="jnews-like-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" defer="defer" data-rocket-src="https://progamerage.com/wp-content/cache/min/1/wp-content/plugins/jnews-social-login/assets/js/plugin.js?ver=1711976900" id="jnews-social-login-style-js"></script>
+<div class="jeg_ad jnews_mobile_sticky_ads "></div><script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https:\/\/progamerage.com"},{"@type":"ListItem","position":2,"name":"Category","item":"https:\/\/progamerage.com?category_name=features"},{"@type":"ListItem","position":3,"name":"Features","item":"https:\/\/progamerage.com\/category\/features\/"}]}</script>
+<style id="jeg_dynamic_css" type="text/css" data-type="jeg_custom-css">.jeg_container, .jeg_content, .jeg_boxed .jeg_main .jeg_container, .jeg_autoload_separator { background-color : #ffffff; } body { --j-body-color : #3e3e44; --j-accent-color : #5afbe7; --j-alt-color : #5afbe7; --j-heading-color : #29292f; --j-entry-link-color : #53585c; } body,.jeg_newsfeed_list .tns-outer .tns-controls button,.jeg_filter_button,.owl-carousel .owl-nav div,.jeg_readmore,.jeg_hero_style_7 .jeg_post_meta a,.widget_calendar thead th,.widget_calendar tfoot a,.jeg_socialcounter a,.entry-header .jeg_meta_like a,.entry-header .jeg_meta_comment a,.entry-header .jeg_meta_donation a,.entry-header .jeg_meta_bookmark a,.entry-content tbody tr:hover,.entry-content th,.jeg_splitpost_nav li:hover a,#breadcrumbs a,.jeg_author_socials a:hover,.jeg_footer_content a,.jeg_footer_bottom a,.jeg_cartcontent,.woocommerce .woocommerce-breadcrumb a { color : #3e3e44; } a, .jeg_menu_style_5>li>a:hover, .jeg_menu_style_5>li.sfHover>a, .jeg_menu_style_5>li.current-menu-item>a, .jeg_menu_style_5>li.current-menu-ancestor>a, .jeg_navbar .jeg_menu:not(.jeg_main_menu)>li>a:hover, .jeg_midbar .jeg_menu:not(.jeg_main_menu)>li>a:hover, .jeg_side_tabs li.active, .jeg_block_heading_5 strong, .jeg_block_heading_6 strong, .jeg_block_heading_7 strong, .jeg_block_heading_8 strong, .jeg_subcat_list li a:hover, .jeg_subcat_list li button:hover, .jeg_pl_lg_7 .jeg_thumb .jeg_post_category a, .jeg_pl_xs_2:before, .jeg_pl_xs_4 .jeg_postblock_content:before, .jeg_postblock .jeg_post_title a:hover, .jeg_hero_style_6 .jeg_post_title a:hover, .jeg_sidefeed .jeg_pl_xs_3 .jeg_post_title a:hover, .widget_jnews_popular .jeg_post_title a:hover, .jeg_meta_author a, .widget_archive li a:hover, .widget_pages li a:hover, .widget_meta li a:hover, .widget_recent_entries li a:hover, .widget_rss li a:hover, .widget_rss cite, .widget_categories li a:hover, .widget_categories li.current-cat>a, #breadcrumbs a:hover, .jeg_share_count .counts, .commentlist .bypostauthor>.comment-body>.comment-author>.fn, span.required, .jeg_review_title, .bestprice .price, .authorlink a:hover, .jeg_vertical_playlist .jeg_video_playlist_play_icon, .jeg_vertical_playlist .jeg_video_playlist_item.active .jeg_video_playlist_thumbnail:before, .jeg_horizontal_playlist .jeg_video_playlist_play, .woocommerce li.product .pricegroup .button, .widget_display_forums li a:hover, .widget_display_topics li:before, .widget_display_replies li:before, .widget_display_views li:before, .bbp-breadcrumb a:hover, .jeg_mobile_menu li.sfHover>a, .jeg_mobile_menu li a:hover, .split-template-6 .pagenum, .jeg_mobile_menu_style_5>li>a:hover, .jeg_mobile_menu_style_5>li.sfHover>a, .jeg_mobile_menu_style_5>li.current-menu-item>a, .jeg_mobile_menu_style_5>li.current-menu-ancestor>a, .jeg_mobile_menu.jeg_menu_dropdown li.open > div > a { color : #5afbe7; } .jeg_menu_style_1>li>a:before, .jeg_menu_style_2>li>a:before, .jeg_menu_style_3>li>a:before, .jeg_side_toggle, .jeg_slide_caption .jeg_post_category a, .jeg_slider_type_1_wrapper .tns-controls button.tns-next, .jeg_block_heading_1 .jeg_block_title span, .jeg_block_heading_2 .jeg_block_title span, .jeg_block_heading_3, .jeg_block_heading_4 .jeg_block_title span, .jeg_block_heading_6:after, .jeg_pl_lg_box .jeg_post_category a, .jeg_pl_md_box .jeg_post_category a, .jeg_readmore:hover, .jeg_thumb .jeg_post_category a, .jeg_block_loadmore a:hover, .jeg_postblock.alt .jeg_block_loadmore a:hover, .jeg_block_loadmore a.active, .jeg_postblock_carousel_2 .jeg_post_category a, .jeg_heroblock .jeg_post_category a, .jeg_pagenav_1 .page_number.active, .jeg_pagenav_1 .page_number.active:hover, input[type="submit"], .btn, .button, .widget_tag_cloud a:hover, .popularpost_item:hover .jeg_post_title a:before, .jeg_splitpost_4 .page_nav, .jeg_splitpost_5 .page_nav, .jeg_post_via a:hover, .jeg_post_source a:hover, .jeg_post_tags a:hover, .comment-reply-title small a:before, .comment-reply-title small a:after, .jeg_storelist .productlink, .authorlink li.active a:before, .jeg_footer.dark .socials_widget:not(.nobg) a:hover .fa, div.jeg_breakingnews_title, .jeg_overlay_slider_bottom_wrapper .tns-controls button, .jeg_overlay_slider_bottom_wrapper .tns-controls button:hover, .jeg_vertical_playlist .jeg_video_playlist_current, .woocommerce span.onsale, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .jeg_popup_post .caption, .jeg_footer.dark input[type="submit"], .jeg_footer.dark .btn, .jeg_footer.dark .button, .footer_widget.widget_tag_cloud a:hover, .jeg_inner_content .content-inner .jeg_post_category a:hover, #buddypress .standard-form button, #buddypress a.button, #buddypress input[type="submit"], #buddypress input[type="button"], #buddypress input[type="reset"], #buddypress ul.button-nav li a, #buddypress .generic-button a, #buddypress .generic-button button, #buddypress .comment-reply-link, #buddypress a.bp-title-button, #buddypress.buddypress-wrap .members-list li .user-update .activity-read-more a, div#buddypress .standard-form button:hover, div#buddypress a.button:hover, div#buddypress input[type="submit"]:hover, div#buddypress input[type="button"]:hover, div#buddypress input[type="reset"]:hover, div#buddypress ul.button-nav li a:hover, div#buddypress .generic-button a:hover, div#buddypress .generic-button button:hover, div#buddypress .comment-reply-link:hover, div#buddypress a.bp-title-button:hover, div#buddypress.buddypress-wrap .members-list li .user-update .activity-read-more a:hover, #buddypress #item-nav .item-list-tabs ul li a:before, .jeg_inner_content .jeg_meta_container .follow-wrapper a { background-color : #5afbe7; } .jeg_block_heading_7 .jeg_block_title span, .jeg_readmore:hover, .jeg_block_loadmore a:hover, .jeg_block_loadmore a.active, .jeg_pagenav_1 .page_number.active, .jeg_pagenav_1 .page_number.active:hover, .jeg_pagenav_3 .page_number:hover, .jeg_prevnext_post a:hover h3, .jeg_overlay_slider .jeg_post_category, .jeg_sidefeed .jeg_post.active, .jeg_vertical_playlist.jeg_vertical_playlist .jeg_video_playlist_item.active .jeg_video_playlist_thumbnail img, .jeg_horizontal_playlist .jeg_video_playlist_item.active { border-color : #5afbe7; } .jeg_tabpost_nav li.active, .woocommerce div.product .woocommerce-tabs ul.tabs li.active, .jeg_mobile_menu_style_1>li.current-menu-item a, .jeg_mobile_menu_style_1>li.current-menu-ancestor a, .jeg_mobile_menu_style_2>li.current-menu-item::after, .jeg_mobile_menu_style_2>li.current-menu-ancestor::after, .jeg_mobile_menu_style_3>li.current-menu-item::before, .jeg_mobile_menu_style_3>li.current-menu-ancestor::before { border-bottom-color : #5afbe7; } .jeg_post_meta .fa, .jeg_post_meta .jpwt-icon, .entry-header .jeg_post_meta .fa, .jeg_review_stars, .jeg_price_review_list { color : #5afbe7; } .jeg_share_button.share-float.share-monocrhome a { background-color : #5afbe7; } h1,h2,h3,h4,h5,h6,.jeg_post_title a,.entry-header .jeg_post_title,.jeg_hero_style_7 .jeg_post_title a,.jeg_block_title,.jeg_splitpost_bar .current_title,.jeg_video_playlist_title,.gallery-caption,.jeg_push_notification_button>a.button { color : #29292f; } .split-template-9 .pagenum, .split-template-10 .pagenum, .split-template-11 .pagenum, .split-template-12 .pagenum, .split-template-13 .pagenum, .split-template-15 .pagenum, .split-template-18 .pagenum, .split-template-20 .pagenum, .split-template-19 .current_title span, .split-template-20 .current_title span { background-color : #29292f; } .entry-content .content-inner a { color : #53585c; } .jeg_topbar .jeg_nav_row, .jeg_topbar .jeg_search_no_expand .jeg_search_input { line-height : 36px; } .jeg_topbar .jeg_nav_row, .jeg_topbar .jeg_nav_icon { height : 36px; } .jeg_topbar, .jeg_topbar.dark, .jeg_topbar.custom { background : #14141b; } .jeg_topbar, .jeg_topbar.dark { border-color : rgba(255,255,255,0.04); color : #ffffff; } .jeg_topbar .jeg_nav_item, .jeg_topbar.dark .jeg_nav_item { border-color : rgba(255,255,255,0.04); } .jeg_topbar a, .jeg_topbar.dark a { color : #f5f5f5; } .jeg_midbar { height : 175px; } .jeg_midbar, .jeg_midbar.dark { background-color : #14141b; } .jeg_header .jeg_bottombar.jeg_navbar,.jeg_bottombar .jeg_nav_icon { height : 91px; } .jeg_header .jeg_bottombar.jeg_navbar, .jeg_header .jeg_bottombar .jeg_main_menu:not(.jeg_menu_style_1) > li > a, .jeg_header .jeg_bottombar .jeg_menu_style_1 > li, .jeg_header .jeg_bottombar .jeg_menu:not(.jeg_main_menu) > li > a { line-height : 91px; } .jeg_header .jeg_bottombar.jeg_navbar_wrapper:not(.jeg_navbar_boxed), .jeg_header .jeg_bottombar.jeg_navbar_boxed .jeg_nav_row { background : #14141b; } .jeg_header .jeg_bottombar, .jeg_header .jeg_bottombar.jeg_navbar_dark, .jeg_bottombar.jeg_navbar_boxed .jeg_nav_row, .jeg_bottombar.jeg_navbar_dark.jeg_navbar_boxed .jeg_nav_row { border-bottom-width : 0px; } .jeg_stickybar.jeg_navbar,.jeg_navbar .jeg_nav_icon { height : 59px; } .jeg_stickybar.jeg_navbar, .jeg_stickybar .jeg_main_menu:not(.jeg_menu_style_1) > li > a, .jeg_stickybar .jeg_menu_style_1 > li, .jeg_stickybar .jeg_menu:not(.jeg_main_menu) > li > a { line-height : 59px; } .jeg_stickybar, .jeg_stickybar.dark { border-bottom-width : 0px; } .jeg_mobile_bottombar { height : 79px; line-height : 79px; } .jeg_mobile_midbar, .jeg_mobile_midbar.dark { background : #252627; } .jeg_nav_search { width : 35%; } .jeg_header .jeg_search_no_expand .jeg_search_form .jeg_search_input { background-color : rgba(0,0,0,0.25); border-color : rgba(255,255,255,0.15); } .jeg_header .jeg_search_wrapper.jeg_search_no_expand .jeg_search_form .jeg_search_input { color : #ffffff; } .jeg_header .jeg_search_no_expand .jeg_search_form .jeg_search_input::-webkit-input-placeholder { color : rgba(255,255,255,0.3); } .jeg_header .jeg_search_no_expand .jeg_search_form .jeg_search_input:-moz-placeholder { color : rgba(255,255,255,0.3); } .jeg_header .jeg_search_no_expand .jeg_search_form .jeg_search_input::-moz-placeholder { color : rgba(255,255,255,0.3); } .jeg_header .jeg_search_no_expand .jeg_search_form .jeg_search_input:-ms-input-placeholder { color : rgba(255,255,255,0.3); } .jeg_header .jeg_search_no_expand .jeg_search_result, .jeg_header .jeg_search_no_expand .jeg_search_result .search-link { border-color : #eeeeee; } .jeg_header .jeg_search_no_expand .jeg_search_result a, .jeg_header .jeg_search_no_expand .jeg_search_result .search-link { color : #212121; } .jeg_header .jeg_menu.jeg_main_menu > li > a { color : #ffffff; } .jeg_menu_style_1 > li > a:before, .jeg_menu_style_2 > li > a:before, .jeg_menu_style_3 > li > a:before { background : #ff5641; } .jeg_header .jeg_menu_style_4 > li > a:hover, .jeg_header .jeg_menu_style_4 > li.sfHover > a, .jeg_header .jeg_menu_style_4 > li.current-menu-item > a, .jeg_header .jeg_menu_style_4 > li.current-menu-ancestor > a, .jeg_navbar_dark .jeg_menu_style_4 > li > a:hover, .jeg_navbar_dark .jeg_menu_style_4 > li.sfHover > a, .jeg_navbar_dark .jeg_menu_style_4 > li.current-menu-item > a, .jeg_navbar_dark .jeg_menu_style_4 > li.current-menu-ancestor > a { background : rgba(255,255,255,0.05); } .jeg_header .jeg_navbar_wrapper .sf-arrows .sf-with-ul:after { color : #ff5641; } .jeg_footer_content,.jeg_footer.dark .jeg_footer_content { background-color : #14141b; color : #a9a9ac; } .jeg_footer .jeg_footer_heading h3,.jeg_footer.dark .jeg_footer_heading h3,.jeg_footer .widget h2,.jeg_footer .footer_dark .widget h2 { color : #5afbe7; } .jeg_footer .jeg_footer_content a, .jeg_footer.dark .jeg_footer_content a { color : #ffffff; } .jeg_footer .jeg_footer_content a:hover,.jeg_footer.dark .jeg_footer_content a:hover { color : #ff5641; } .footer_widget.widget_tag_cloud a,.jeg_footer.dark .footer_widget.widget_tag_cloud a { background-color : rgba(255,255,255,0.15); } .jeg_footer_secondary,.jeg_footer.dark .jeg_footer_secondary { border-top-color : #5afbe7; } .jeg_footer_2 .footer_column,.jeg_footer_2.dark .footer_column { border-right-color : #5afbe7; } .jeg_footer_5 .jeg_footer_social, .jeg_footer_5 .footer_column, .jeg_footer_5 .jeg_footer_secondary,.jeg_footer_5.dark .jeg_footer_social,.jeg_footer_5.dark .footer_column,.jeg_footer_5.dark .jeg_footer_secondary { border-color : #5afbe7; } .jeg_footer_secondary,.jeg_footer.dark .jeg_footer_secondary,.jeg_footer_bottom,.jeg_footer.dark .jeg_footer_bottom,.jeg_footer_sidecontent .jeg_footer_primary { color : #a9a9ac; } .jeg_menu_footer li:not(:last-child):after,.jeg_footer.dark .jeg_menu_footer li:not(:last-child):after { color : rgba(255,255,255,0.2); } .jeg_read_progress_wrapper .jeg_progress_container .progress-bar { background-color : #fc5b70; } body,input,textarea,select,.chosen-container-single .chosen-single,.btn,.button { font-family: "Source Sans Pro",Helvetica,Arial,sans-serif;font-size: 15px;  } .jeg_header, .jeg_mobile_wrapper { font-family: Sintony,Helvetica,Arial,sans-serif;font-weight : 700; font-style : normal;  } .jeg_main_menu > li > a { font-family: Sintony,Helvetica,Arial,sans-serif; } h3.jeg_block_title, .jeg_footer .jeg_footer_heading h3, .jeg_footer .widget h2, .jeg_tabpost_nav li { font-family: Roboto,Helvetica,Arial,sans-serif; } .jeg_thumb .jeg_post_category a,.jeg_pl_lg_box .jeg_post_category a,.jeg_pl_md_box .jeg_post_category a,.jeg_postblock_carousel_2 .jeg_post_category a,.jeg_heroblock .jeg_post_category a,.jeg_slide_caption .jeg_post_category a { background-color : #5afbe7; color : #22181c; } .jeg_overlay_slider .jeg_post_category,.jeg_thumb .jeg_post_category a,.jeg_pl_lg_box .jeg_post_category a,.jeg_pl_md_box .jeg_post_category a,.jeg_postblock_carousel_2 .jeg_post_category a,.jeg_heroblock .jeg_post_category a,.jeg_slide_caption .jeg_post_category a { border-color : #5afbe7; } </style><style type="text/css">
+					.no_thumbnail .jeg_thumb,
+					.thumbnail-container.no_thumbnail {
+					    display: none !important;
+					}
+					.jeg_search_result .jeg_pl_xs_3.no_thumbnail .jeg_postblock_content,
+					.jeg_sidefeed .jeg_pl_xs_3.no_thumbnail .jeg_postblock_content,
+					.jeg_pl_sm.no_thumbnail .jeg_postblock_content {
+					    margin-left: 0;
+					}
+					.jeg_postblock_11 .no_thumbnail .jeg_postblock_content,
+					.jeg_postblock_12 .no_thumbnail .jeg_postblock_content,
+					.jeg_postblock_12.jeg_col_3o3 .no_thumbnail .jeg_postblock_content  {
+					    margin-top: 0;
+					}
+					.jeg_postblock_15 .jeg_pl_md_box.no_thumbnail .jeg_postblock_content,
+					.jeg_postblock_19 .jeg_pl_md_box.no_thumbnail .jeg_postblock_content,
+					.jeg_postblock_24 .jeg_pl_md_box.no_thumbnail .jeg_postblock_content,
+					.jeg_sidefeed .jeg_pl_md_box .jeg_postblock_content {
+					    position: relative;
+					}
+					.jeg_postblock_carousel_2 .no_thumbnail .jeg_post_title a,
+					.jeg_postblock_carousel_2 .no_thumbnail .jeg_post_title a:hover,
+					.jeg_postblock_carousel_2 .no_thumbnail .jeg_post_meta .fa {
+					    color: #212121 !important;
+					} 
+					.jnews-dark-mode .jeg_postblock_carousel_2 .no_thumbnail .jeg_post_title a,
+					.jnews-dark-mode .jeg_postblock_carousel_2 .no_thumbnail .jeg_post_title a:hover,
+					.jnews-dark-mode .jeg_postblock_carousel_2 .no_thumbnail .jeg_post_meta .fa {
+					    color: #fff !important;
+					} 
+				</style><script type="rocketlazyloadscript" data-rocket-type="text/javascript">;!function(){"use strict";window.jnews=window.jnews||{},window.jnews.first_load=window.jnews.first_load||{},window.jnews.first_load=function(){var e=this,t=jnews.library,n="object"==typeof jnews&&"object"==typeof jnews.library;e.data=null,e.run_ajax=!0,e.run_loginregister=!0,e.clear=function(){e.run_ajax=!0,e.run_loginregister=!0,e.data=null},e.init=function(){n&&(t.globalBody.querySelectorAll(".jeg_popup_account").length&&jnews.loginregister&&e.run_loginregister&&(e.run_loginregister=!1,jnews.loginregister.init(),jnews.loginregister.hook_form()),jfla.length&&e.run_ajax&&(e.run_ajax=!1,e.do_ajax({action:"jnews_first_load_action",jnews_id:jnewsoption.postid,load_action:jfla})))},e.update_counter=function(){if(n){var o={total_view:t.globalBody.querySelectorAll(".jeg_share_stats .jeg_views_count .counts"),total_share:t.globalBody.querySelectorAll(".jeg_share_stats .jeg_share_count .counts"),total_comment:t.globalBody.querySelectorAll(".jeg_meta_comment a span")};t.forEach(Object.entries(e.data.counter),(function([e,n]){o[e].length&&t.forEach(o[e],(function(e,o){t.setText(e,n)}))}))}},e.do_ajax=function(o){if(n){var a=new XMLHttpRequest;a.onreadystatechange=function(){XMLHttpRequest.DONE===a.readyState&&200==a.status&&(e.data=JSON.parse(a.responseText),e.data.counter&&"object"==typeof e.data.counter&&e.update_counter())},a.open("POST",jnews_ajax_url,!0),a.setRequestHeader("Content-Type","application/x-www-form-urlencoded; charset=UTF-8"),a.send(t.httpBuildQuery(o))}}},window.jnews.first_load=new window.jnews.first_load,jnews.first_load.init()}();</script><script>!function(){window.advanced_ads_ready_queue=window.advanced_ads_ready_queue||[],advanced_ads_ready_queue.push=window.advanced_ads_ready;for(var d=0,a=advanced_ads_ready_queue.length;d<a;d++)advanced_ads_ready(advanced_ads_ready_queue[d])}();</script><script>window.lazyLoadOptions={elements_selector:"iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}};window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://progamerage.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script><script>function lazyLoadThumb(e,alt,l){var t='<img loading="lazy" src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360">',a='<button class="play" aria-label="play Youtube video"></button>';if(l){t=t.replace('data-lazy-','');t=t.replace('loading="lazy"','');t=t.replace(/<noscript>.*?<\/noscript>/g,'');}t=t.replace('alt=""','alt="'+alt+'"');return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?"":"&"+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow","accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var exclusions=[];var e,t,p,u,l,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)(e=document.createElement("div")),(u='https://i.ytimg.com/vi/ID/hqdefault.jpg'),(u=u.replace('ID',a[t].dataset.id)),(l=exclusions.some(exclusion=>u.includes(exclusion))),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query",a[t].dataset.query),e.setAttribute("data-src",a[t].dataset.src),(e.innerHTML=lazyLoadThumb(a[t].dataset.id,a[t].dataset.alt,l)),a[t].appendChild(e),(p=e.querySelector(".play")),(p.onclick=lazyLoadYoutubeIframe)});</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://progamerage.com/wp-content/cache/min/1/fb.js?ver=1711976901" defer></script>
+<script>"use strict";function wprRemoveCPCSS(){var preload_stylesheets=document.querySelectorAll('link[data-rocket-async="style"][rel="preload"]');if(preload_stylesheets&&0<preload_stylesheets.length)for(var stylesheet_index=0;stylesheet_index<preload_stylesheets.length;stylesheet_index++){var media=preload_stylesheets[stylesheet_index].getAttribute("media")||"all";if(window.matchMedia(media).matches)return void setTimeout(wprRemoveCPCSS,200)}var elem=document.getElementById("rocket-critical-css");elem&&"remove"in elem&&elem.remove()}window.addEventListener?window.addEventListener("load",wprRemoveCPCSS):window.attachEvent&&window.attachEvent("onload",wprRemoveCPCSS);</script><script>class RocketElementorAnimation{constructor(){this.deviceMode=document.createElement("span"),this.deviceMode.id="elementor-device-mode-wpr",this.deviceMode.setAttribute("class","elementor-screen-only"),document.body.appendChild(this.deviceMode)}_detectAnimations(){let t=getComputedStyle(this.deviceMode,":after").content.replace(/"/g,"");this.animationSettingKeys=this._listAnimationSettingsKeys(t),document.querySelectorAll(".elementor-invisible[data-settings]").forEach(t=>{const e=t.getBoundingClientRect();if(e.bottom>=0&&e.top<=window.innerHeight)try{this._animateElement(t)}catch(t){}})}_animateElement(t){const e=JSON.parse(t.dataset.settings),i=e._animation_delay||e.animation_delay||0,n=e[this.animationSettingKeys.find(t=>e[t])];if("none"===n)return void t.classList.remove("elementor-invisible");t.classList.remove(n),this.currentAnimation&&t.classList.remove(this.currentAnimation),this.currentAnimation=n;let s=setTimeout(()=>{t.classList.remove("elementor-invisible"),t.classList.add("animated",n),this._removeAnimationSettings(t,e)},i);window.addEventListener("rocket-startLoading",function(){clearTimeout(s)})}_listAnimationSettingsKeys(t="mobile"){const e=[""];switch(t){case"mobile":e.unshift("_mobile");case"tablet":e.unshift("_tablet");case"desktop":e.unshift("_desktop")}const i=[];return["animation","_animation"].forEach(t=>{e.forEach(e=>{i.push(t+e)})}),i}_removeAnimationSettings(t,e){this._listAnimationSettingsKeys().forEach(t=>delete e[t]),t.dataset.settings=JSON.stringify(e)}static run(){const t=new RocketElementorAnimation;requestAnimationFrame(t._detectAnimations.bind(t))}}document.addEventListener("DOMContentLoaded",RocketElementorAnimation.run);</script><noscript><link rel='stylesheet' id='wp-block-library-css' href='https://progamerage.com/wp-includes/css/dist/block-library/style.min.css?ver=6.5.3' type='text/css' media='all' /><link data-minify="1" rel='stylesheet' id='aoa-css' href='https://progamerage.com/wp-content/cache/min/1/wp-content/plugins/ad-overlay-anything/css/style.css?ver=1712574528' type='text/css' media='all' /><link rel='stylesheet' id='media-credit-css' href='https://progamerage.com/wp-content/plugins/media-credit/public/css/media-credit.min.css?ver=4.3.0' type='text/css' media='all' /><link rel='stylesheet' id='jnews-parent-style-css' href='https://progamerage.com/wp-content/themes/jnews/style.css?ver=6.5.3' type='text/css' media='all' /><link rel='stylesheet' id='elementor-frontend-css' href='https://progamerage.com/wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.20.3' type='text/css' media='all' /><link data-minify="1" rel='stylesheet' id='font-awesome-css' href='https://progamerage.com/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css?ver=1712574528' type='text/css' media='all' /><link data-minify="1" rel='stylesheet' id='jnews-icon-css' href='https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/fonts/jegicon/jegicon.css?ver=1712574528' type='text/css' media='all' /><link data-minify="1" rel='stylesheet' id='jscrollpane-css' href='https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/css/jquery.jscrollpane.css?ver=1712574528' type='text/css' media='all' /><link data-minify="1" rel='stylesheet' id='oknav-css' href='https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/css/okayNav.css?ver=1712574528' type='text/css' media='all' /><link data-minify="1" rel='stylesheet' id='magnific-popup-css' href='https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/css/magnific-popup.css?ver=1712574528' type='text/css' media='all' /><link data-minify="1" rel='stylesheet' id='chosen-css' href='https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/css/chosen/chosen.css?ver=1712574528' type='text/css' media='all' /><link data-minify="1" rel='stylesheet' id='jnews-main-css' href='https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/css/main.css?ver=1712574528' type='text/css' media='all' /><link data-minify="1" rel='stylesheet' id='jnews-pages-css' href='https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/css/pages.css?ver=1712574528' type='text/css' media='all' /><link data-minify="1" rel='stylesheet' id='jnews-responsive-css' href='https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/css/responsive.css?ver=1712574528' type='text/css' media='all' /><link data-minify="1" rel='stylesheet' id='jnews-pb-temp-css' href='https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/css/pb-temp.css?ver=1712574528' type='text/css' media='all' /><link data-minify="1" rel='stylesheet' id='jnews-elementor-css' href='https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/css/elementor-frontend.css?ver=1712574528' type='text/css' media='all' /><link rel='stylesheet' id='jnews-style-css' href='https://progamerage.com/wp-content/themes/jnews-child/style.css?ver=1.0.0' type='text/css' media='all' /><link data-minify="1" rel='stylesheet' id='jnews-darkmode-css' href='https://progamerage.com/wp-content/cache/min/1/wp-content/themes/jnews/assets/css/darkmode.css?ver=1712574528' type='text/css' media='all' /><link data-minify="1" rel='stylesheet' id='jnews-review-css' href='https://progamerage.com/wp-content/cache/min/1/wp-content/plugins/jnews-review/assets/css/plugin.css?ver=1712574528' type='text/css' media='all' /><link data-minify="1" rel='stylesheet' id='jnews-social-login-style-css' href='https://progamerage.com/wp-content/cache/min/1/wp-content/plugins/jnews-social-login/assets/css/plugin.css?ver=1712574528' type='text/css' media='all' /><link data-minify="1" rel='stylesheet' id='jnews-scheme-css' href='https://progamerage.com/wp-content/cache/min/1/wp-content/uploads/jnews/scheme.css?ver=1712574528' type='text/css' media='all' /></noscript></body>
+</html>
